@@ -4,6 +4,7 @@
  * Generalize framework detection functionality.
  *
  * @author Bao Nguyen <contact@nqbao.com>
+ * @author justjavac <justjavac@gmail.com>
  * @license GPLv3
  **/
 

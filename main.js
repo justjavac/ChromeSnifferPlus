@@ -5,6 +5,7 @@
  * Some part of this script was refered from Wappalyzer Firefox Addon.
  *
  * @author Bao Nguyen <contact@nqbao.com>
+ * @author justjavac <justjavac@gmail.com>
  * @license GPLv3
  **/
 
