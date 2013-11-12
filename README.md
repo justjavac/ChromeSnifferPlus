@@ -14,9 +14,9 @@ Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软�
 由于 Google 更改了 Chrome 插件的安装策略，禁止直接下载安装非 Chrome WebSrore 的插件。
 因此必须手动安装：
 
-1. 打开 Chrome 扩展页面，chrome://extensions/
+1. 打开 Chrome 扩展页面，在浏览器直接访问 `chrome://extensions`。或者点击右上角 --> 工具 --> 扩展程序。
 
-2. 将下载的插件文件 ChromeSnifferPlus-x.x.x.crx 拖放到 Chrome 中
+2. 将下载的插件文件 `ChromeSnifferPlus-x.x.x.crx` 拖放到 Chrome 中
 
 3. 安装完成
 
