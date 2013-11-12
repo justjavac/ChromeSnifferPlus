@@ -104,6 +104,12 @@ var appinfo = {
 	},
 
 	// ==== cms or framework ====
+	'CodeIgniter': {
+		icon: 'codeigniter.ico',
+		url: 'http://codeigniter.com',
+		priority: 1
+	},
+	
 	'vBulletin': {
 		icon: 'vBulletin.ico',
 		url: 'http://www.vbulletin.com/',
