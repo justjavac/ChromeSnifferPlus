@@ -1,0 +1,166 @@
+body {
+    background-color: #ebeff9;
+    font-family: arial, sans-serif;
+    font-size: 13px
+}
+
+.box {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: #f4f4f4;
+	border: 0px solid white;
+}
+
+#head {
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+#content {
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+#content2 {
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+#instructions {
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 1.5em;
+    margin: 0.7em 0 0;
+    text-align: center
+}
+
+#save_status {
+    background-color: #fff1a8;
+    font-weight: bold;
+    margin-left: 10px;
+    opacity: 0;
+    padding: 3px;
+    -webkit-border-radius: 3px
+}
+
+.explain.unselected {
+	color: #555;
+	padding: 11px;
+}
+
+.explain.selected {
+	background-color: white;
+	border: 1px solid #CCC;
+	padding: 10px;
+	border-radius: 6px;
+}
+.explain.selected.alert {
+	background-color: #FFF1A8;
+}
+
+.myEmailDescription.disabled {
+	color: #555;
+	border: 1px solid #CCC;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.myEmailDescription.enabled {
+	background-color: white;
+	border: 1px solid #CCC;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.shortcut_name {
+	width:120px;
+	display:inline-block;
+}
+
+.shortcut_value {
+	width:120px;
+	text-transform:capitalize;
+}
+
+.buttons {
+    clear: left;
+	text-align: right;
+    padding: 1em;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 0.4em
+}
+
+.button {
+	background: #222 url(/images/overlay-button.png) repeat-x 0 0;
+	display:inline-block;
+	color: white !important;
+	font-weight: bold;
+	line-height: 1;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	position: relative;
+	cursor: pointer;
+	overflow: visible;
+	width: auto;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+.large.button {
+	font-size: 20px;
+	padding: 8px 19px 9px;
+	margin-bottom:10px;
+}
+.medium.button {
+	font-size: 16px;
+	padding: 8px 15px 7px;
+	margin-bottom:7px;
+}
+.orange.button {
+	background-color: #FF5C00;
+	-webkit-animation-name: orangePulse;
+}
+.button:hover {
+	background-color: #D45500;
+}
+.green.button {
+	background-color: #91BD09;
+	-webkit-animation-name: greenPulse;
+}
+.grey.button {
+	background-color: grey;
+}
+.button:hover {
+	background-color: #749A02;
+}
+@-webkit-keyframes orangePulse {
+  from { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #ff5c00; -webkit-box-shadow: 0 0 18px #ff5c00; }
+  to { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+}
+@-webkit-keyframes greenPulse {
+  from { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91BD09; -webkit-box-shadow: 0 0 18px #91BD09; }
+  to { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
+}
