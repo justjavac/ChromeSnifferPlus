@@ -52,3 +52,7 @@ V 0.3.5
 - Tengine http://tengine.taobao.org
 - Tomcat http://tomcat.apache.org
 - Java http://www.java.com
+
+v 0.3.6
+
+- 自动更新
