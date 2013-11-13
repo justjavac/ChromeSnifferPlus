@@ -18,7 +18,7 @@ Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软�
 
 ### 安装
 
-本插件还放在 Chrome Web Store，暂时放在百度网盘里面，下载地址： http://pan.baidu.com/s/1j8ZrU
+本插件还未放在 Chrome Web Store，暂时放在百度网盘里面，下载地址： http://pan.baidu.com/s/1j8ZrU
 
 由于 Google 更改了 Chrome 插件的安装策略，禁止直接下载安装非 Chrome WebSrore 的插件。
 因此必须手动安装：
