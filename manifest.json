@@ -5,7 +5,7 @@
 		"128": "icon128.png"
 	},
 	"manifest_version": 2,
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"description": "\u63a2\u6d4b\u5f53\u524d\u7f51\u9875\u6b63\u5728\u4f7f\u7528\u7684\u5f00\u6e90\u8f6f\u4ef6\u6216\u8005js\u7c7b\u5e93\uff0cweb\u5f00\u53d1\u8005\u5fc5\u5907\u795e\u5668\u3002",
 	"background": {
 		"page": "background.html"

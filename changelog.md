@@ -42,3 +42,7 @@ V 0.3.2
 V 0.3.3
 
 - CodeIgniter http://codeigniter.com
+
+V 0.3.4
+
+- 新增 `popup.html` 页面
