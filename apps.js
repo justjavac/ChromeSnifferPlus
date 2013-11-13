@@ -804,6 +804,11 @@ var appinfo = {
     url: 'http://nginx.org/en/',
     priority: 1.5
   },
+  'GitHub': {
+    icon: 'github.ico',
+    url: 'https://github.com',
+    priority: 1.5
+  },
   'Varnish': {
     icon: 'varnish.ico',
     url: 'https://www.varnish-cache.org/',
