@@ -24,7 +24,8 @@ var knownHeaders = {
     'Nette': /Nette Framework/
   },
   'server': {
-    'Apache': /Apache\/?(.*)/,
+    'Apache': /Apache\/(.*)/,
+    'Tomcat': /(Apache-Coyote\/?.*)/,
     'nginx': /nginx\/?(.*)/,
     'IIS': /Microsoft-IIS\/?(.*)/
   },

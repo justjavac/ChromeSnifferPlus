@@ -55,8 +55,8 @@
 			'GetSimple': /GetSimple/,
 			'DataLifeEngine': /DataLife Engine/,
 			'ClanSphere': /ClanSphere/,
-		      'Mura CMS': /Mura CMS\s*(.*)/i,
-		      'Tiki Wiki CMS Groupware': /Tiki/i
+		    'Mura CMS': /Mura CMS\s*(.*)/i,
+		    'Tiki Wiki CMS Groupware': /Tiki/i
 		},
 		'copyright': {
 			'phpBB': /phpBB/i
@@ -65,7 +65,7 @@
 			'Elgg': /.+/
 		},
 		'powered-by': {
-      'Serendipity': /Serendipity/i
+      		'Serendipity': /Serendipity/i
 		},
 		'author': {
 			'Avactis': /Avactis Team/i
@@ -404,10 +404,10 @@
 		'Spine': function() {
 			if(window.Spine && window.Spine.version)
 				return window.Spine.version;	
-    },
-    'Angular': function () {
-      	if (window.angular && window.angular.version && 'full' in window.angular.version)
-        	return window.angular.version.full;
+    	},
+    	'Angular': function () {
+      		if (window.angular && window.angular.version && 'full' in window.angular.version)
+        		return window.angular.version.full;
 		}
 	};
 	
