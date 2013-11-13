@@ -784,6 +784,11 @@ var appinfo = {
     url: 'http://httpd.apache.org/',
     priority: 1.5
   },
+  'Tomcat': {
+    icon: 'tomcat.ico',
+    url: 'http://tomcat.apache.org/',
+    priority: 1.5
+  },
   'nginx': {
     icon: 'nginx.ico',
     url: 'http://nginx.org/en/',
