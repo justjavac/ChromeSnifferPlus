@@ -199,6 +199,9 @@
 		'CodeIgniter': function() {
 			return document.cookie.indexOf("cisession") != -1;
 		},
+		'Java': function() {
+			return document.cookie.indexOf("JSESSIONID") != -1;
+		},
 		'Drupal': function() {
       		return window.Drupal;
 		},

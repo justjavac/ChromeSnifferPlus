@@ -779,6 +779,16 @@ var appinfo = {
     url: 'http://php.net/',
     priority: 1.5
   },
+  'Java': {
+    icon: 'java.ico',
+    url: 'http://www.java.com',
+    priority: 1.5
+  },
+  'Tengine': {
+    icon: 'tengine.ico',
+    url: 'http://tengine.taobao.org',
+    priority: 1.5
+  },
   'Apache': {
     icon: 'apache.ico',
     url: 'http://httpd.apache.org/',
