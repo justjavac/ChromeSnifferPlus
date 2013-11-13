@@ -1,24 +1,24 @@
 ## 更新日志
 
-### 2013-07-16
+### v 0.3.6
 
-新增：
+- 自动更新 
 
-- 百度统计 http://tongji.baidu.com
-- cnzz http://www.cnzz.com
-- bShare http://www.bshare.cn
-- 百度分享 http://share.baidu.com
-- 多说 http://www.duoshuo.com
-- 友荐 http://www.ujian.cc
-- 友言 http://www.uyan.cc
-- JiaThis http://www.jiathis.com
-- 无觅相关文章插件 http://www.wumii.com/widget/getWidget
+### V 0.3.5
 
-### 2013-11-11
+- Tengine http://tengine.taobao.org
+- Tomcat http://tomcat.apache.org
+- Java http://www.java.com
 
-V 0.3.2
+### V 0.3.4
 
-新增：
+- 新增 `popup.html` 页面
+
+### V 0.3.3
+
+- CodeIgniter http://codeigniter.com
+
+### V 0.3.2
 
 - Angular http://angularjs.org
 - HumansTxt http://humanstxt.org
@@ -39,20 +39,14 @@ V 0.3.2
 - ASP.NET http://www.asp.net
 - Nette http://nette.org
 
-V 0.3.3
+### V 0.3.1
 
-- CodeIgniter http://codeigniter.com
-
-V 0.3.4
-
-- 新增 `popup.html` 页面
-
-V 0.3.5
-
-- Tengine http://tengine.taobao.org
-- Tomcat http://tomcat.apache.org
-- Java http://www.java.com
-
-v 0.3.6
-
-- 自动更新
+- 百度统计 http://tongji.baidu.com
+- cnzz http://www.cnzz.com
+- bShare http://www.bshare.cn
+- 百度分享 http://share.baidu.com
+- 多说 http://www.duoshuo.com
+- 友荐 http://www.ujian.cc
+- 友言 http://www.uyan.cc
+- JiaThis http://www.jiathis.com
+- 无觅相关文章插件 http://www.wumii.com/widget/getWidget
