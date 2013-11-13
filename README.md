@@ -32,7 +32,5 @@ Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软�
 ### 截图
 
 ![ChromeSnifferPlus效果截图](./screenshot/shot1.png)
-
 ![ChromeSnifferPlus效果截图](./screenshot/shot2.png)
-
 ![ChromeSnifferPlus效果截图](./screenshot/shot3.png)
