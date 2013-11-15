@@ -799,6 +799,11 @@ var appinfo = {
     url: 'http://tomcat.apache.org/',
     priority: 1.5
   },
+  'Domino': {
+    icon: 'domino.ico',
+    url: 'http://www.ibm.com/software/lotus/products/domino/',
+    priority: 1.5
+  },
   'nginx': {
     icon: 'nginx.ico',
     url: 'http://nginx.org/en/',
