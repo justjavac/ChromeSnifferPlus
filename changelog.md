@@ -1,24 +1,28 @@
 ## 更新日志
 
-### v 0.3.6
+### 0.3.7
+
+- segmentfault http://segmentfault.com
+
+### 0.3.6
 
 - 自动更新 
 
-### V 0.3.5
+### 0.3.5
 
 - Tengine http://tengine.taobao.org
 - Tomcat http://tomcat.apache.org
 - Java http://www.java.com
 
-### V 0.3.4
+### 0.3.4
 
 - 新增 `popup.html` 页面
 
-### V 0.3.3
+### 0.3.3
 
 - CodeIgniter http://codeigniter.com
 
-### V 0.3.2
+### 0.3.2
 
 - Angular http://angularjs.org
 - HumansTxt http://humanstxt.org
@@ -39,7 +43,7 @@
 - ASP.NET http://www.asp.net
 - Nette http://nette.org
 
-### V 0.3.1
+### 0.3.1
 
 - 百度统计 http://tongji.baidu.com
 - cnzz http://www.cnzz.com

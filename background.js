@@ -25,7 +25,7 @@ var knownHeaders = {
   },
   'server': {    
     'Tengine': /Tengine(.*)/,
-    'Apache': /Apache\/(.*)/,
+    'Apache': /Apache[^-]\/?(.*)/,
     'Tomcat': /Apache-Coyote\/?.*/,
     'GitHub': /GitHub.com/,
     'nginx': /nginx\/?(.*)/,

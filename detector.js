@@ -102,6 +102,7 @@
 		'\u53cb\u8a00': /v\d\.uyan\.cc\/(code\/uyan\.js|js\/iframe\.js)/,	// 友言
 		'JiaThis': /v\d\.jiathis\.com\/code(_mini)?\/jiathis/,
 		'\u65e0\u89c5': /widget\.wumii\.(cn|com)\/ext\/relatedItemsWidget/,		// 无觅相关文章插件
+		'segmentfault': /w\.segmentfault\.com\/card\/\d+\.js/i,		
 
 		'Google Analytics': /google-analytics\.com\/(ga|urchin).js/i,
 		'Quantcast': /quantserve\.com\/quant\.js/i,

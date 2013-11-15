@@ -54,6 +54,11 @@ var appinfo = {
 		url: 'http://www.wumii.com/widget/getWidget',
 		priority: 2.9
 	},
+	'segmentfault': {
+		icon: 'segmentfault.ico',
+		url: 'http://segmentfault.com',
+		priority: 2.9
+	},
 
 	// ==== services ====
 	'Tumblr': {
