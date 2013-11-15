@@ -28,6 +28,7 @@ var knownHeaders = {
     'Apache': /Apache\/(.*)/,
     'Tomcat': /Apache-Coyote\/?.*/,
     'GitHub': /GitHub.com/,
+    'Domino': /Lotus-Domino/,
     'nginx': /nginx\/?(.*)/,
     'IIS': /Microsoft-IIS\/?(.*)/
   },
