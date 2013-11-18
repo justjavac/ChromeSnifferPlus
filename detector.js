@@ -225,7 +225,10 @@
       		return window.SUGAR;
 		},
 		'YUI': function() {
-      		return window.YAHOO | window.YUI;
+      		return window.YAHOO;
+		},
+		'YUI 3': function() {
+      		return window.YUI;
 		},
 		'jQuery': function() {
       		return window.jQuery;
@@ -384,6 +387,8 @@
 		'YUI': function() {
       		if (typeof YAHOO === 'object' && YAHOO.VERSION !== undefined)
         		return YAHOO.VERSION;
+		},
+		'YUI 3': function() {
       		if ('YUI' in window && typeof YUI === 'function' && YUI().version !== undefined)
         		return YUI().version;
 		},

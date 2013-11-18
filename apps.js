@@ -509,7 +509,12 @@ var appinfo = {
 	},
 	'YUI': {
 		icon: 'YUI.ico',
-		url: 'http://developer.yahoo.com/yui/',
+		url: 'http://developer.yahoo.com/yui/2/',
+		priority: 2
+	},
+	'YUI 3': {
+		icon: 'yui3.png',
+		url: 'http://yuilibrary.com',
 		priority: 2
 	},
 	'Cappuccino': {
