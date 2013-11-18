@@ -1,5 +1,9 @@
 ## 更新日志
 
+### 0.3.8
+
+- Highcharts
+
 ### 0.3.7
 
 - segmentfault http://segmentfault.com

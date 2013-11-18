@@ -462,6 +462,11 @@ var appinfo = {
 	},
 	
 	// ==== js framework ====
+	'Highcharts': {
+		icon: 'highcharts.png',
+		url: 'http://www.highcharts.com',
+		priority: 2
+	},
 	'jQuery': {
 		icon: 'jQuery.ico',
 		url: 'http://jquery.com',
