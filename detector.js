@@ -200,6 +200,9 @@
 		'Highcharts': function() {
 			return window.Highcharts;
 		},
+		'Zepto.js': function() {
+			return window.Zepto && window.Zepto.fn;
+		},
 		'CodeIgniter': function() {
 			return document.cookie.indexOf("cisession") != -1;
 		},
