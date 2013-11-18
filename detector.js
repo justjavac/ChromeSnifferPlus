@@ -206,6 +206,9 @@
 		'Java': function() {
 			return document.cookie.indexOf("JSESSIONID") != -1;
 		},
+		'Domino': function() {
+			return document.cookie.indexOf("LtpaToken") != -1||document.cookie.indexOf("DomAuthSessId") != -1;
+		},
 		'Drupal': function() {
       		return window.Drupal;
 		},
