@@ -467,6 +467,11 @@ var appinfo = {
 		url: 'http://www.highcharts.com',
 		priority: 2
 	},
+	'Zepto.js': {
+		icon: 'zepto.png',
+		url: 'http://zeptojs.com',
+		priority: 2
+	},
 	'jQuery': {
 		icon: 'jQuery.ico',
 		url: 'http://jquery.com',

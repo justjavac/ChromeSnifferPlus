@@ -3,6 +3,8 @@
 ### 0.3.8
 
 - Highcharts
+- YUI 3
+- Zepto.js
 
 ### 0.3.7
 
