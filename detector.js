@@ -196,7 +196,10 @@
 	
 	// 5: detect by inline javascript
 	// 根据 inline javascript 判断
-	var js_tests = {
+	var js_tests = {		
+		'Highcharts': function() {
+			return window.Highcharts;
+		},
 		'CodeIgniter': function() {
 			return document.cookie.indexOf("cisession") != -1;
 		},
@@ -350,7 +353,11 @@
 
 	// 6: detect some script version when available
 	// 判断 javascript 版本
-	var js_versions = {		
+	var js_versions = {
+		'Highcharts': function() {
+      		if ('Highcharts' in window && Highcharts.version !== undefined)
+        		return window.Highcharts.version;
+		},
 		'Prototype': function() {
       		if ('Prototype' in window && Prototype.Version !== undefined)
         		return window.Prototype.Version;
