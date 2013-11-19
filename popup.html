@@ -6,7 +6,17 @@
 </style>
 <script language="javascript" src="popup.js"></script>
 <div id="app_list" style="width: 10px;"></div>
-	
+<script src="analytics.js"></script>
+<script>
+	function trackApp(e) {
+		_gaq.push(['_trackEvent', e.target.title, 'clicked']);
+	};
+
+	var apps = document.querySelectorAll('#app_list a');
+	for (var i = 0; i < apps.length; i++) {
+		apps[i].addEventListener('click', trackApp);
+	}
+</script>
 <!--
 	Chrome AppSniffer by Bao Nguyen <contact@nqbao.com>
 	Chrome Sniffer Plus by justjavac <justjavac@gmail.com>
