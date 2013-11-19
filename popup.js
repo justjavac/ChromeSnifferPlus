@@ -51,5 +51,16 @@ chrome.tabs.getSelected(null,function(tab){
 		{
 			display.style.width = "160px";
 		}
+
+		// Google Analytics
+		function trackApp(e) {
+			_gaq.push(['_trackEvent', e.target.title, 'clicked']);
+		};
+
+		var apps = document.querySelectorAll('#app_list a');
+		for (var i = 0; i < apps.length; i++) {
+			apps[i].addEventListener('click', trackApp);
+		}
+
 	});
 });
