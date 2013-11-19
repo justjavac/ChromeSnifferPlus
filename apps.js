@@ -632,7 +632,7 @@ var appinfo = {
 	},
 	'Google Analytics': {
 		icon: 'Google_Analytics.ico',
-		url: 'http://www.google.com/analytics/',
+		url: 'https://www.google.com/analytics/?hl=zh-CN',
 		priority: 3
 	},
 	'SiteCatalyst': {
