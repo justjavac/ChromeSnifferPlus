@@ -5,6 +5,7 @@
 - Highcharts
 - YUI 3
 - Zepto.js
+- 新增 Google Analytics 功能
 
 ### 0.3.7
 
