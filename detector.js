@@ -350,7 +350,10 @@
     	},
     	'LiveStreet': function () {
       		return window.LIVESTREET_SECURITY_KEY;
-		}
+		},
+    'D3': function () {
+      return window.d3;
+    }
 	};
 	
     for (var t in js_tests) {
@@ -430,7 +433,11 @@
     	'Angular': function () {
       		if (window.angular && window.angular.version && 'full' in window.angular.version)
         		return window.angular.version.full;
-		}
+		},
+    'D3': function () {
+      if (window.d3 && window.d3.version)
+        return window.d3.version;
+    }
 	};
 	
   	for (var a in _apps) {
