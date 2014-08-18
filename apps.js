@@ -542,6 +542,11 @@ var appinfo = {
     url: 'http://angularjs.org/',
     priority: 1.5
   },
+  'D3': {
+  	icon: 'D3.svg',
+  	url: 'http://d3js.org/',
+  	priority: 2
+  },
 	
 	// ==== js tools ====
 	'Raphael': {
