@@ -1,6 +1,14 @@
 ChromeSnifferPlus
 =================
 
+### 动态
+
+今天（2014-10-30）下午，ChromeSnifferPlus 插件正式登陆 Chrome Web Store。
+
+在线安装地址： https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh
+
+### 介绍
+
 Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软件或者 js 类库，开发者必备。
 
 通过本插件，您可以探测：
@@ -15,10 +23,6 @@ Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软�
 如果你发现了还不能探测的类库，可以[创建 issues](https://github.com/justjavac/ChromeSnifferPlus/issues)。
 
 查看：[更新日志](./changelog.md)
-
-### 安装
-
-已经在 Chrome Web Store 上线，安装地址： <https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh>
 
 ### 截图
 
