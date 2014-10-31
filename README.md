@@ -3,7 +3,7 @@ ChromeSnifferPlus
 
 ### Introduction
 
-ChromeSnifferPlus： Sniff web framework and javascript libraries run on browsing website.
+Sniff web framework and javascript libraries run on browsing website.
 
 With this extension, You can sniff:
 
@@ -16,7 +16,7 @@ When you surf the internet with ChromeSnifferPlus, You can also find more unknow
 
 If you are a developer, you can [Create Issues](https://github.com/justjavac/ChromeSnifferPlus/issues).
 
-view: [change log](./changelog.md)
+view [change log](./changelog.md)
 
 [中文介绍](./README_zh_CN.md)
 
