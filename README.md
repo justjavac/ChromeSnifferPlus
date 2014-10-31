@@ -1,32 +1,36 @@
 ChromeSnifferPlus
 =================
 
-### 动态
+### Introduction
 
-今天（2014-10-30）下午，ChromeSnifferPlus 插件正式登陆 Chrome Web Store。
+ChromeSnifferPlus： Sniff web framework and javascript libraries run on browsing website.
 
-在线安装地址： https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh
+With this extension, You can sniff:
 
-### 介绍
+- javascript Library: jQuery, ExtJS, Angular ...
+- Web APIs: Blogger, Google Analytics ...
+- Web Framework: WordPress, phpBB, Drupal, MediaWiki, codeigniter ...
+- Web Server: PHP, Apache, nginx, IIS ...
 
-Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软件或者 js 类库，开发者必备。
+When you surf the internet with ChromeSnifferPlus, You can also find more unknown frameworks and libraries.
 
-通过本插件，您可以探测：
+If you are a developer, you can [Create Issues](https://github.com/justjavac/ChromeSnifferPlus/issues).
 
-- javascript 库： jQuery、ExtJS、Angular 等。
-- 常用的 web 服务： 百度统计、cnzz、Google Analytics 等。
-- Web 框架： WordPress、phpBB、Drupal、MediaWiki 等。
-- 服务器环境： PHP、Apache、nginx 等。
+view: [change log](./changelog.md)
 
-当你安装此插件去浏览网页时，还可以发现更多你未知的框架和库。
+[中文介绍](./README_zh_CN.md)
 
-如果你发现了还不能探测的类库，可以[创建 issues](https://github.com/justjavac/ChromeSnifferPlus/issues)。
+### Screenshot
 
-查看：[更新日志](./changelog.md)
+![ChromeSnifferPlus Screenshot](./screenshot/shot1.png) &nbsp;&nbsp;&nbsp;&nbsp;
+![ChromeSnifferPlus Screenshot](./screenshot/shot2.png) &nbsp;&nbsp;&nbsp;&nbsp;
+![ChromeSnifferPlus Screenshot](./screenshot/shot3.png) &nbsp;&nbsp;&nbsp;&nbsp;
+![ChromeSnifferPlus Screenshot](./screenshot/shot4.png) 
 
-### 截图
+### Credits
 
-![ChromeSnifferPlus效果截图](./screenshot/shot1.png) &nbsp;&nbsp;&nbsp;&nbsp;
-![ChromeSnifferPlus效果截图](./screenshot/shot2.png) &nbsp;&nbsp;&nbsp;&nbsp;
-![ChromeSnifferPlus效果截图](./screenshot/shot3.png) &nbsp;&nbsp;&nbsp;&nbsp;
-![ChromeSnifferPlus效果截图](./screenshot/shot4.png) 
+- [justjavac](https://github.com/justjavac)
+
+### License
+
+ChromeSnifferPlus is released under the GPL License. See the bundled [LICENSE](./LICENSE) file for details.
