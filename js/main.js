@@ -15,7 +15,7 @@
   if (head) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = chrome.extension.getURL('detector.js');
+    script.src = chrome.extension.getURL('js/detector.js');
 
     var meta = document.createElement('meta');
     meta.name = 'chromesniffer';

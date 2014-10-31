@@ -1,0 +1,64 @@
+body {
+    background-color: #ebeff9;
+    font-family: arial, sans-serif;
+    font-size: 13px
+}
+
+.box {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: #f4f4f4;
+	border: 0px solid white;
+}
+
+#head {
+    margin: 20px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+#content {
+    margin: 20px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+#instructions {
+    margin: 40px auto 20px;
+    padding: 12px;
+    width: 600px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 1.5em;
+    margin: 0.7em 0 0;
+    text-align: center
+}
+
+.shortcut_name {
+	width:120px;
+	display:inline-block;
+}
+
+.shortcut_value {
+	width:120px;
+	text-transform:capitalize;
+}
+
+@-webkit-keyframes orangePulse {
+  from { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #ff5c00; -webkit-box-shadow: 0 0 18px #ff5c00; }
+  to { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+}
+@-webkit-keyframes greenPulse {
+  from { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91BD09; -webkit-box-shadow: 0 0 18px #91BD09; }
+  to { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
+}
