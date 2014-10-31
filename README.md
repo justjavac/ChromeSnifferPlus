@@ -3,6 +3,8 @@ ChromeSnifferPlus
 
 ### Introduction
 
+This extension is an extended version of the Appspector(ChromeSniffer).
+
 Sniff web framework and javascript libraries run on browsing website.
 
 With this extension, You can sniff:
