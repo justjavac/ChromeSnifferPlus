@@ -1,0 +1,53 @@
+{
+	"extName": {
+		"message": "Chrome Sniffer Plus",
+		"description": "extension name."
+	},
+	"extShortName": {
+		"message": "ChromeSnifferPlus",
+		"description": "extension short name."
+	},
+	"extDesc": {
+		"message": "sniff 探测当前网页正在使用的开源软件或者js类库，web开发者必备神器。",
+		"description": "extension description."
+	},
+	"extIntroTitle": {
+		"message": "Introduction",
+		"description": "option page introduction title."
+	},
+	"extIntroduction": {
+		"message": "Chrome Sniffer: You can sniff",
+		"description": "option page introduction."
+	},
+	"extIntroductionJavascript": {
+		"message": "javascript Library: jQuery, ExtJS, Angular ..."
+	},
+	"extIntroductionWebAPI": {
+		"message": "Web APIs: Blogger, Google Analytics ..."
+	},
+	"extIntroductionWebFramework": {
+		"message": "Web Framework: WordPress, phpBB, Drupal, MediaWiki, codeigniter ..."
+	},
+	"extIntroductionWebSever": {
+		"message": "Web Server: PHP, Apache, nginx, IIS ..."
+	},
+	"extIntroductionSource": {
+		"message": "Source Code:"
+	},
+	"extIntroductionNotice": {
+		"message": "开发者总是喜欢尽量隐藏某些东东，所以可能存在误判。"
+	},
+	"extIntroductionDeveloper": {
+		"message": "If you are a developer, you can"
+	},
+	"extIntroductionIssues": {
+		"message": "Create Issues"
+	},
+	"extIntroductionThanks": {
+		"message": "Thanks"
+	},
+	"pageActionTitle": {
+		"message": "Click to view details...",
+		"description": "page action title."
+	}
+}

@@ -2,57 +2,34 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>ChromeSnifferPlus</title>
-		<link rel="stylesheet" type="text/css" href="options.css">
+		<title i18n-content="extShortName"></title>
+		<link rel="stylesheet" type="text/css" href="css/options.css">
+    	<script src="js/i18n_template_no_process.js"></script>
 	</head>
 	<body>
 		<div id="head" class="box">
-			<h1>ChromeSnifferPlus</h1>
+			<h1 i18n-content="extShortName"></h1>
 		</div>
 
 		<div id="instructions" class="box" style="background-color:white;border-radius:10px">
-	        <h2 style="text-align: left;">简介</h2>
-	        <p>
-	            Chrome Sniffer： Chrome 探测器，通过本插件，您可以探测：
-	        </p>
+	        <h2 style="text-align: left;" i18n-content="extIntroTitle"></h2>
+	        <p i18n-content="extIntroduction"></p>
 	        <ul>
-	            <li><p>javascript 库： jQuery、ExtJS、Angular 等。</p></li>
-	            <li><p>常用的 web 服务： 百度统计、cnzz、Google Analytics 等。</p></li>
-	            <li><p>Web 框架： WordPress、phpBB、Drupal、MediaWiki 等。</p></li>
-	            <li><p>服务器环境： PHP、Apache、nginx 等。</p></li>
+	            <li><p i18n-content="extIntroductionJavascript"></p></li>
+	            <li><p i18n-content="extIntroductionWebAPI"></p></li>
+	            <li><p i18n-content="extIntroductionWebFramework"></p></li>
+	            <li><p i18n-content="extIntroductionWebSever"></p></li>
 	        </ul>
 	        <div id="credits" style="padding:20px;">
 				<hr>
-				<span style="font-weight:bold;">源码地址</span>
+				<span style="font-weight:bold;" i18n-content="extIntroductionSource"></span>
 				<span><a href="https://github.com/justjavac/ChromeSnifferPlus" target="_blank">https://github.com/justjavac/ChromeSnifferPlus</a></span>
 			</div>
 
-	        <p style="color:red;font-weight:bold;">
-	            开发者总是喜欢尽量隐藏某些东东，所以可能存在误判。
-	        </p>
+	        <p style="color:red;font-weight:bold;" i18n-content="extIntroductionNotice"></p>
+			<p style="font-weight:bold;height: 50px;"><span i18n-content="extIntroductionDeveloper"></span><a href="https://github.com/justjavac/ChromeSnifferPlus/issues" target="_blank" i18n-content="extIntroductionIssues"></a>. (<span style="color:red" i18n-content="extIntroductionThanks"></span>) </p>
 	    </div>
-
-		<div id="content" class="box">
-			<div style="padding:20px;">
-				<span style="font-weight:bold;">作者信息：</span>
-				<ul>
-					<li><p>个人博客： <a href="http://justjavac.com" target="_blank">http://justjavac.com</a></p></li>
-                    <li><p>新浪微博： <a href="http://weibo.com/justjavac" target="_blank">http://weibo.com/justjavac</a></p></li>
-                    <li><p>github： <a href="https://github.com/justjavac" target="_blank">https://github.com/justjavac</a></p></li>
-                    <li><p>SegmentFault： <a href="http://segmentfault.com/u/justjavac" target="_blank">http://segmentfault.com/u/justjavac</a></p></li>
-                </ul>
-			</div>
-		</div>
-
-		<div id="content2" class="box">
-			<div style="padding:20px;">
-				<span style="font-weight:bold;height: 50px;">如果你开发了类库或者框架，可以联系我：</span> (<span style="color:red">谢谢</span>) <br><br>
-				<span style="font-weight:bold;height: 50px;">我的邮件地址：</span>
-				<span id="myEmailVerified" style="padding: 10px 0px;">
-					<span id="myEmail" style="color:#00c;">justjavac at gmail dot com</span>
-				</span>
-			</div>
-		</div>
-		<script src="analytics.js"></script>
+		<script src="js/analytics.js"></script>
+		<script src="js/common.js"></script>
 	</body>
 </html>
