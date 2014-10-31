@@ -1,6 +1,8 @@
 ChromeSnifferPlus
 =================
 
+ChromeSnifferPlus： Chrome 探测器，可以探测正在使用的开源软件或者 js 类库，开发者必备。
+
 ### 动态
 
 今天（2014-10-30）下午，ChromeSnifferPlus 插件正式登陆 Chrome Web Store。
@@ -9,7 +11,13 @@ ChromeSnifferPlus
 
 ### 介绍
 
-Chrome Sniffer Plus： Chrome 探测器，可以探测正在使用的开源软件或者 js 类库，开发者必备。
+本插件是一个扩展版的 Appspector（原名 ChromeSniffer）。
+从名字也可以看出来，由于原作者一直没有更新，于是我在原有基础上增加了一些最近新流行的库，尤其是增加了对于国内库以及框架的支持。
+
+现在正在对整个插件的代码进行重构，本来打算重新改名，重新架构，以区别于 ChromeSniffer。
+鉴于 ChromeSniffer 已经改名为 Appspector，于是本插件就依然叫 ChromeSnifferPlus。
+
+### 功能
 
 通过本插件，您可以探测：
 
