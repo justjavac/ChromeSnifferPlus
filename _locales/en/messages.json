@@ -8,7 +8,7 @@
 		"description": "extension short name."
 	},
 	"extDesc": {
-		"message": "sniff 探测当前网页正在使用的开源软件或者js类库，web开发者必备神器。",
+		"message": "Sniff web framework and javascript libraries run on browsing website.",
 		"description": "extension description."
 	},
 	"extIntroTitle": {
@@ -35,7 +35,7 @@
 		"message": "Source Code:"
 	},
 	"extIntroductionNotice": {
-		"message": "开发者总是喜欢尽量隐藏某些东东，所以可能存在误判。"
+		"message": "Developers always like to hide something, so there may be a miscarriage of justice."
 	},
 	"extIntroductionDeveloper": {
 		"message": "If you are a developer, you can"
