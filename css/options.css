@@ -46,19 +46,3 @@ h1 {
 	width:120px;
 	display:inline-block;
 }
-
-.shortcut_value {
-	width:120px;
-	text-transform:capitalize;
-}
-
-@-webkit-keyframes orangePulse {
-  from { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
-  50% { background-color: #ff5c00; -webkit-box-shadow: 0 0 18px #ff5c00; }
-  to { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
-}
-@-webkit-keyframes greenPulse {
-  from { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
-  50% { background-color: #91BD09; -webkit-box-shadow: 0 0 18px #91BD09; }
-  to { background-color: #749A02; -webkit-box-shadow: 0 0 9px #333; }
-}
