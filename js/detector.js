@@ -182,6 +182,7 @@
 		'Prostores' : /-legacycss\/Asset">/,
 		'osCommerce': /(product_info\.php\?products_id|_eof \/\/-->)/,
 		'OpenCart': /index.php\?route=product\/product/,
+		'\u4e03\u725b\u4e91\u5b58\u50a8\u52a0\u901f': /<(link|script|img)[^>]+(qiniudn\.com|qbox\.me|clouddn\.com|qiniu\.com)[^>]+>/i,	// 七牛云存储加速
 		'Shibboleth': /<form action="\/idp\/Authn\/UserPassword" method="post">/
 	};
 

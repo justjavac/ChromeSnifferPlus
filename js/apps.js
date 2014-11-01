@@ -59,6 +59,11 @@ var appinfo = {
 		url: 'http://segmentfault.com',
 		priority: 2.9
 	},
+	'\u4e03\u725b\u4e91\u5b58\u50a8\u52a0\u901f': { // 七牛云存储加速
+		icon: 'qiniu.png',
+		url: 'http://www.qiniu.com',
+		priority: 0.9
+	},
 
 	// ==== services ====
 	'Tumblr': {
