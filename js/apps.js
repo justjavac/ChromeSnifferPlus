@@ -834,6 +834,11 @@ var appinfo = {
     url: 'http://www.ibm.com/software/lotus/products/domino/',
     priority: 1.5
   },
+  'Play': {
+    icon: 'play.ico',
+    url: 'https://www.playframework.com/',
+    priority: 1
+  },
   'nginx': {
     icon: 'nginx.ico',
     url: 'http://nginx.org/en/',
