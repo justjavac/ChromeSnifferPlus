@@ -78,12 +78,12 @@
 
 		if (!meta_tests[name]) continue;
 		
-    	for (var t in meta_tests[name]) {
+    for (var t in meta_tests[name]) {
 			if (t in _apps) continue;
 			
-		    r = meta_tests[name][t].exec(m.content);
-		    if (r) {
-				_apps[t] = r[1] ? r[1] : -1;
+      r = meta_tests[name][t].exec(m.content);
+      if (r) {
+        _apps[t] = r[1] ? r[1] : -1;
 			}
 		}
 	}
@@ -140,14 +140,14 @@
 	    'KISSmetrics': /i.kissmetrics.com\/i.js/
 	};
 
-    for (var idx in scripts) {
+  for (var idx in scripts) {
 		var s = scripts[idx];
 		if (!s.src) continue;
 		s = s.src;
 
-    	for (var t in script_tests) {
+    for (var t in script_tests) {
 			if (t in _apps) continue;
-        	if (script_tests[t].test(s)) {
+      if (script_tests[t].test(s)) {
 				_apps[t] = -1;
 			}
 		}
@@ -186,9 +186,9 @@
 		'Shibboleth': /<form action="\/idp\/Authn\/UserPassword" method="post">/
 	};
 
-    for (var t in text_tests) {
+  for (var t in text_tests) {
 		if (t in _apps) continue;
-    	if (text_tests[t].test(text)) {
+    if (text_tests[t].test(text)) {
 			_apps[t] = -1;
 		}
 	}
@@ -357,9 +357,9 @@
     }
 	};
 	
-    for (var t in js_tests) {
+  for (var t in js_tests) {
 		if (t in _apps) continue;
-    	if (js_tests[t]()) {
+    if (js_tests[t]()) {
 			_apps[t] = -1;
 		}
 	}
@@ -462,41 +462,57 @@
 		'Bootstrap': ['hero-unit', '.carousel-control', '[class^="icon-"]:last-child']
 	};
 
-  	for (var t in cssClasses) {
+  for (var t in cssClasses) {
 		if (t in _apps) continue;
 
 		var found = true;
-    	for (var css in cssClasses[t]) {
+    for (var css in cssClasses[t]) {
 			var act = false;
-      		name = cssClasses[t][css];
-			
-			/* Iterate through all registered css classes and check for presence */
-      		for (var cssFile in document.styleSheets) {
-        		for (var cssRule in document.styleSheets[cssFile].cssRules) {
-					var style = document.styleSheets[cssFile].cssRules[cssRule];
+      name = cssClasses[t][css];
 
-					if (typeof style === "undefined") continue;
-					if (typeof style.selectorText === "undefined") continue;
+      /* Iterate through all registered css classes and check for presence */
+      for (var cssFile in document.styleSheets) {
+        for (var cssRule in document.styleSheets[cssFile].cssRules) {
+          var style = document.styleSheets[cssFile].cssRules[cssRule];
 
-          			if (style.selectorText.indexOf(name) !== -1) {
-						act = true;
-						break;
-					}
-				}
-				if (act === true) break;
-			}
+          if (typeof style === "undefined") continue;
+          if (typeof style.selectorText === "undefined") continue;
+
+          if (style.selectorText.indexOf(name) !== -1) {
+            act = true;
+            break;
+          }
+        }
+        if (act === true) break;
+      }
 
 			found = found & act;
 		}
 
-    	if (found === true) {
+    if (found === true) {
 			_apps[t] = -1;
-    	}
-    	else {
+    }
+    else {
 			break;
 		}
 	}
 
+  // 10: 根据引用的css文件的href判断
+  var cssLinkName ={
+    'Bootstrap': /bootstrap(-theme)?\.(min\.)?css/
+  };
+
+  cssLinks = document.styleSheets;
+  for (var i = 0; i < cssLinks.length; i++) {
+    if (!cssLinks[i].href) continue;
+    for (var app in cssLinkName) {
+      if (app in _apps) continue;
+      if (cssLinkName[app].test(cssLinks[i].href)) {
+        _apps[app] = -1;
+      }
+    }
+  }
+  
 	// convert to array
 	var jsonString = JSON.stringify(_apps);
 	// send back to background page
