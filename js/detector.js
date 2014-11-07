@@ -93,7 +93,7 @@
 	var scripts = doc.getElementsByTagName("script");
 	
 	var script_tests = {
-		'\u767e\u5ea6\u7edf\u8ba1': /hm\.baidu\.com\/h\.js/i,	// 百度统计
+		'\u767e\u5ea6\u7edf\u8ba1': /hm\.baidu\.com\/hm?\.js/i,	// 百度统计
 		'cnzz': /(w|s14)\.cnzz\.com\/(c|stat)\.php/i,
 		'bShare':  /static\.bshare\.cn\/b/,
 		'\u767e\u5ea6\u5206\u4eab': /bdimg\.share\.baidu\.com\/static\/js\//,	// 百度分享
