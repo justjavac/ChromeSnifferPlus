@@ -1,5 +1,13 @@
 ## 更新日志
 
+### 1.2.0
+
+- 修复 Bootstrap 检测 #36
+- 修复百度统计的bug #20
+- 修复 cnzz 最新版
+- google analytic fixed #13
+- jiathis fixed #21
+
 ### 1.1.0 
 
 - 重新规划目录结构
