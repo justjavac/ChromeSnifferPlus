@@ -502,6 +502,9 @@
         }
     }
 
+    console.log("detector");
+    console.log(_apps);
+
     // convert to array
     var jsonString = JSON.stringify(_apps);
     // send back to background page
