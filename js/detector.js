@@ -100,7 +100,7 @@
 		'\u591a\u8bf4': /static\.duoshuo\.com\/embed\.js/,	// 多说
 		'\u53cb\u8350': /v\d\.ujian\.cc\/code\/ujian\.js/,	// 友荐 
 		'\u53cb\u8a00': /v\d\.uyan\.cc\/(code\/uyan\.js|js\/iframe\.js)/,	// 友言
-		'JiaThis': /v\d\.jiathis\.com\/code(_mini)?\/jiathis/,
+		'JiaThis': /v\d\.jiathis\.com\/code(_mini)?\/(jiathis|jia)/,
 		'\u65e0\u89c5': /widget\.wumii\.(cn|com)\/ext\/relatedItemsWidget/,		// 无觅相关文章插件
 		'segmentfault': /w\.segmentfault\.com\/card\/\d+\.js/i,		
 
