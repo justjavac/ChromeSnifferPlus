@@ -14,7 +14,7 @@
 
   if (head) {
     var script = document.createElement('script');
-    script.type = 'text/javascript';
+    script.type = 'application/x-js';
     script.src = chrome.extension.getURL('js/detector.js');
 
     var meta = document.createElement('meta');
