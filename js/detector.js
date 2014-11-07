@@ -94,7 +94,7 @@
 	
 	var script_tests = {
 		'\u767e\u5ea6\u7edf\u8ba1': /hm\.baidu\.com\/hm?\.js/i,	// 百度统计
-		'cnzz': /(w|s14)\.cnzz\.com\/(c|stat)\.php/i,
+		'cnzz': /(w|s\d+)\.cnzz\.com\/(c|stat)\.php/i,
 		'bShare':  /static\.bshare\.cn\/b/,
 		'\u767e\u5ea6\u5206\u4eab': /bdimg\.share\.baidu\.com\/static\/js\//,	// 百度分享
 		'\u591a\u8bf4': /static\.duoshuo\.com\/embed\.js/,	// 多说
