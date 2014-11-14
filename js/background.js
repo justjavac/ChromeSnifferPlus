@@ -96,7 +96,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 continue;
             }
 
-            if (appinfo[app].priority) {
+            if (appinfo[app] && appinfo[app].priority) {
                 if (!appinfo[mainApp].priority) {
                     mainApp = app;
                 } else if (appinfo[mainApp].priority > appinfo[app].priority) {
