@@ -27,12 +27,10 @@
         function() {
             var apps = JSON.parse(meta.content);
 
-            if (Object.keys(apps).length > 0) {
-                chrome.extension.sendMessage({
-                    msg: "result",
-                    apps: apps
-                });
-            }
+            chrome.extension.sendMessage({
+                msg: "result",
+                apps: apps
+            });
         });
     }
 })();
