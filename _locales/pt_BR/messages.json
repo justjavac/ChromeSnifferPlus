@@ -1,0 +1,53 @@
+{
+	"extName": {
+		"message": "Chrome Sniffer Plus",
+		"description": "nome da extensão."
+	},
+	"extShortName": {
+		"message": "ChromeSnifferPlus",
+		"description": "nome curto da extensão."
+	},
+	"extDesc": {
+		"message": "Framework web Sniffer e bibliotecas javascript que são executadas no site de navegação.",
+		"description": "descrição da extensão."
+	},
+	"extIntroTitle": {
+		"message": "Introdução",
+		"description": "opção de página para o título de introdução."
+	},
+	"extIntroduction": {
+		"message": "Chrome Sniffer: Você pode sniffar",
+		"description": "opção para a página de introdução."
+	},
+	"extIntroductionJavascript": {
+		"message": "Bibliotecas e Frameworks Javascript: jQuery, ExtJS, Angular ..."
+	},
+	"extIntroductionWebAPI": {
+		"message": "Web APIs: Blogger, Google Analytics ..."
+	},
+	"extIntroductionWebFramework": {
+		"message": "Web Framework: WordPress, phpBB, Drupal, MediaWiki, codeigniter ..."
+	},
+	"extIntroductionWebSever": {
+		"message": "Web Server: PHP, Apache, nginx, IIS ..."
+	},
+	"extIntroductionSource": {
+		"message": "Código Fonte:"
+	},
+	"extIntroductionNotice": {
+		"message": "Desenvolvedores sempre gostam de se esconder por tráz de bugs, portanto, pode haver um erro prejudicial."
+	},
+	"extIntroductionDeveloper": {
+		"message": "Se você é um desenvolvedor, você pode"
+	},
+	"extIntroductionIssues": {
+		"message": "Criar Issues"
+	},
+	"extIntroductionThanks": {
+		"message": "Obrigado"
+	},
+	"pageActionTitle": {
+		"message": "Clique para ver detalhes...",
+		"description": "título da página acessada."
+	}
+}
