@@ -34,12 +34,12 @@ var appinfo = {
         url: 'http://www.duoshuo.com',
         priority: 2.9
     },
-    '\u53cb\u8350': { // 友荐 
+    '\u53cb\u8350': { // 友荐
         icon: 'ujian.ico',
         url: 'http://www.ujian.cc',
         priority: 2.9
     },
-    '\u53cb\u8a00': { // 友言 
+    '\u53cb\u8a00': { // 友言
         icon: 'uyan.ico',
         url: 'http://www.uyan.cc',
         priority: 2.9
@@ -550,6 +550,11 @@ var appinfo = {
     'D3': {
         icon: 'D3.svg',
         url: 'http://d3js.org/',
+        priority: 2
+    },
+    'moment': {
+        icon: 'moment.png',
+        url: 'http://momentjs.com/',
         priority: 2
     },
 
