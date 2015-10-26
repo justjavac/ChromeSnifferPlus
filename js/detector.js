@@ -102,7 +102,7 @@
         '\u591a\u8bf4': /static\.duoshuo\.com\/embed\.js/,
         // 多说
         '\u53cb\u8350': /v\d\.ujian\.cc\/code\/ujian\.js/,
-        // 友荐 
+        // 友荐
         '\u53cb\u8a00': /v\d\.uyan\.cc\/(code\/uyan\.js|js\/iframe\.js)/,
         // 友言
         'JiaThis': /v\d\.jiathis\.com\/code(_mini)?\/(jiathis|jia)/,
@@ -364,6 +364,9 @@
         },
         'D3': function() {
             return window.d3;
+        },
+        'moment': function() {
+            return window.moment;
         }
     };
 
@@ -430,6 +433,9 @@
         },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;
+        },
+        'moment': function() {
+            if (window.moment && window.moment.version) return window.moment.version;
         }
     };
 
