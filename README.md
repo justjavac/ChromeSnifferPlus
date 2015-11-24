@@ -22,17 +22,12 @@ view [change log](./changelog.md)
 
 [中文介绍](./README_zh_CN.md)
 
-### TODO
-
-- [ ] YII
-- [ ] CodeIgniter
-
 ### Screenshot
 
 ![ChromeSnifferPlus Screenshot](./screenshot/shot1.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![ChromeSnifferPlus Screenshot](./screenshot/shot2.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![ChromeSnifferPlus Screenshot](./screenshot/shot3.png) &nbsp;&nbsp;&nbsp;&nbsp;
-![ChromeSnifferPlus Screenshot](./screenshot/shot4.png) 
+![ChromeSnifferPlus Screenshot](./screenshot/shot4.png)
 
 ### Credits
 
