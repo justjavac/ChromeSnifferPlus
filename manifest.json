@@ -6,7 +6,7 @@
 	},
 	"short_name": "ChromeSnifferPlus",
 	"manifest_version": 2,
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"description": "__MSG_extDesc__",
 	"default_locale": "en",
 	"background": {
@@ -32,6 +32,5 @@
 	],
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
  	"web_accessible_resources": ["js/detector.js"],
-	"homepage_url": "https://github.com/justjavac/ChromeSnifferPlus",
 	"update_url": "https://raw.github.com/justjavac/ChromeSnifferPlus/master/update.xml"
 }
