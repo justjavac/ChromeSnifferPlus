@@ -227,6 +227,9 @@
         'Drupal': function() {
             return window.Drupal;
         },
+        'Flarum': function() {
+            return window.System && System.has && System.has('flarum/app');
+        },
         'TomatoCMS': function() {
             return window.Tomato;
         },
