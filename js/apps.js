@@ -9,7 +9,7 @@
 
 var appinfo = {
     // ==== zh-cn ====
-    '\u767e\u5ea6\u7edf\u8ba1': { // 百度统计
+    '\u767e\u5ea6\u7edf\u8ba1': {
         icon: 'bdtongji.ico',
         url: 'http://tongji.baidu.com',
         priority: 3
@@ -24,22 +24,22 @@ var appinfo = {
         url: 'http://www.bshare.cn',
         priority: 2.9
     },
-    '\u767e\u5ea6\u5206\u4eab': { // 百度分享
+    '\u767e\u5ea6\u5206\u4eab': {
         icon: 'baidushare.ico',
         url: 'http://share.baidu.com',
         priority: 2.9
     },
-    '\u591a\u8bf4': { // 多说
+    '\u591a\u8bf4': {
         icon: 'duoshuo.ico',
         url: 'http://www.duoshuo.com',
         priority: 2.9
     },
-    '\u53cb\u8350': { // 友荐
+    '\u53cb\u8350': {
         icon: 'ujian.ico',
         url: 'http://www.ujian.cc',
         priority: 2.9
     },
-    '\u53cb\u8a00': { // 友言
+    '\u53cb\u8a00': {
         icon: 'uyan.ico',
         url: 'http://www.uyan.cc',
         priority: 2.9
@@ -49,7 +49,7 @@ var appinfo = {
         url: 'http://www.jiathis.com',
         priority: 2.9
     },
-    '\u65e0\u89c5': { // 无觅相关文章插件
+    '\u65e0\u89c5': {
         icon: 'wumii.ico',
         url: 'http://www.wumii.com/widget/getWidget',
         priority: 2.9
@@ -59,7 +59,7 @@ var appinfo = {
         url: 'http://segmentfault.com',
         priority: 2.9
     },
-    '\u4e03\u725b\u4e91\u5b58\u50a8\u52a0\u901f': { // 七牛云存储加速
+    '\u4e03\u725b\u4e91\u5b58\u50a8\u52a0\u901f': {
         icon: 'qiniu.png',
         url: 'http://www.qiniu.com',
         priority: 0.9
