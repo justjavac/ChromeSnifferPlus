@@ -136,6 +136,11 @@ var appinfo = {
         url: 'http://www.phpbb.com',
         priority: 1
     },
+    'Flarum': {
+        icon: 'flarum.png',
+        url: 'http://flarum.org',
+        priority: 1
+    },
     'IPB': {
         title: 'Invision Power Board',
         icon: 'IPB.ico',
