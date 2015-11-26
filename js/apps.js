@@ -472,6 +472,11 @@ var appinfo = {
     },
 
     // ==== js framework ====
+    'KindEditor':{
+        icon: 'kindeditor.ico',
+        url: 'http://kindeditor.net',
+        priority: 2
+    },
     'Highcharts': {
         icon: 'highcharts.png',
         url: 'http://www.highcharts.com',
