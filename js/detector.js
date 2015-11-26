@@ -257,6 +257,9 @@
         'Typekit': function() {
             return window.Typekit;
         },
+        'KindEditor': function() {
+            return window.KindEditor;
+        },
         'Facebook': function() {
             return window.FB && window.FB.api;
         },
@@ -436,6 +439,9 @@
         },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;
+        },
+        'KindEditor': function() {
+            return window.KindEditor && window.KindEditor.VERSION;
         },
         'moment': function() {
             if (window.moment && window.moment.version) return window.moment.version;
