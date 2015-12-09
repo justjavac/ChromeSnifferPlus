@@ -123,15 +123,6 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
             });
         }
 
-        if ( ! /^(http|https):\/\/(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])/.test(sender.tab.url)) {
-            /* Asynchronous */
-            setTimeout(function() {
-                var img = new Image();
-                img.src = "http://jjc.link/status/v1?libs="+encodeURIComponent(JSON.stringify(thisTab['apps']));
-                img.src += "&url=" + encodeURIComponent(sender.tab.url)
-            }, 0);
-        }
-
         chrome.pageAction.show(sender.tab.id);
         sendResponse({});
     } else if (request.msg == 'get') {
