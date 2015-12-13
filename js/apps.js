@@ -884,6 +884,11 @@ var appinfo = {
         url: 'http://nette.org/',
         priority: 1.5
     },
+    'Font Awesome': {
+        icon: 'font-awesome.ico',
+        url: 'https://fortawesome.github.io/Font-Awesome/',
+        priority: 5
+    },
 
     // ==== misc ====
     '': { // default
