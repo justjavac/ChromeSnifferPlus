@@ -216,7 +216,7 @@
             return window.Zepto && window.Zepto.fn;
         },
         'CodeIgniter': function() {
-            return document.cookie.indexOf("cisession") != -1;
+            return document.cookie.indexOf("cisession") != -1 || document.cookie.indexOf("ci_session") != -1;
         },
         'Java': function() {
             return document.cookie.indexOf("JSESSIONID") != -1;
@@ -250,6 +250,30 @@
         },
         'jQuery': function() {
             return window.jQuery;
+        },
+        "ColorThief": function() {
+            return window.ColorThief;
+        },
+        "jQuery.hotkeys": function() {
+            return window.jQuery && jQuery.hotkeys;
+        },
+        "spin.js": function() {
+            return (window.jQuery && jQuery.fn && jQuery.fn.spin) || window.Spinner;
+        },
+        "babel":function() {
+            return window.babelHelpers;
+        },
+        "FastClick":function() {
+            return window.FastClick;
+        },
+        "twemoji":function() {
+            return window.twemoji;
+        },
+        "Mithril":function() {
+            return window.m && typeof window.m.version === 'function';
+        },
+        "s9e.TextFormatter": function() {
+            return window.s9e && s9e.TextFormatter;
         },
         'jQuery UI': function() {
             return window.jQuery && window.jQuery.ui;
@@ -378,10 +402,12 @@
 
     for (var t in js_tests) {
         if (t in _apps) continue;
+        console.log("js_tests[" + t + "]: " + js_tests[t]());
         if (js_tests[t]()) {
             _apps[t] = -1;
         }
     }
+
 
     // 6: detect some script version when available
     // 判断 javascript 版本
@@ -409,6 +435,12 @@
         },
         'YUI 3': function() {
             if ('YUI' in window && typeof YUI === 'function' && YUI().version !== undefined) return YUI().version;
+        },
+        "jQuery.hotkeys": function() {
+            return window.jQuery && jQuery.hotkeys && jQuery.hotkeys.version;
+        },
+        "Mithril": function() {
+            return window.m && typeof window.m.version ==='function' && window.m.version();
         },
         'MooTools': function() {
             if (typeof MooTools === 'object' && MooTools.version !== undefined) return MooTools.version;

@@ -25,12 +25,13 @@
 
         meta.addEventListener('ready',
         function() {
-            var apps = JSON.parse(meta.content);
-
-            chrome.extension.sendMessage({
-                msg: "result",
-                apps: apps
-            });
+            setTimeout(function(){
+                var apps = JSON.parse(meta.content);
+                chrome.extension.sendMessage({
+                    msg: "result",
+                    apps: apps
+                });
+            }, 2000);
         });
     }
 })();
