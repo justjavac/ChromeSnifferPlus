@@ -20,7 +20,6 @@
 
 	window.CollecUsage = function (callback) {
         var url = 'http://jjc.link/status/v2';
-		var url = 'http://127.0.0.13/status/v2';
 
         if (localStorage.length === 0) {
             return;

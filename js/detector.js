@@ -275,6 +275,9 @@
         "s9e.TextFormatter": function() {
             return window.s9e && s9e.TextFormatter;
         },
+        "Pusher": function() {
+            return window.Pusher && Pusher.Channel;
+        },
         'jQuery UI': function() {
             return window.jQuery && window.jQuery.ui;
         },
@@ -402,12 +405,10 @@
 
     for (var t in js_tests) {
         if (t in _apps) continue;
-        console.log("js_tests[" + t + "]: " + js_tests[t]());
         if (js_tests[t]()) {
             _apps[t] = -1;
         }
     }
-
 
     // 6: detect some script version when available
     // 判断 javascript 版本
@@ -428,7 +429,7 @@
             if (typeof jQuery === 'function' && jQuery.ui && jQuery.ui.version !== undefined) return jQuery.ui.version;
         },
         'Dojo': function() {
-            if (typeof dojo === 'object' && dojo.version.toString() !== undefined) return dojo.version;
+            if (typeof dojo === 'object' && dojo.version.toString() !== undefined) return dojo.version.toString();
         },
         'YUI': function() {
             if (typeof YAHOO === 'object' && YAHOO.VERSION !== undefined) return YAHOO.VERSION;
@@ -441,6 +442,9 @@
         },
         "Mithril": function() {
             return window.m && typeof window.m.version ==='function' && window.m.version();
+        },
+        "Pusher": function() {
+            return window.Pusher && Pusher.Channel && Pusher.VERSION;
         },
         'MooTools': function() {
             if (typeof MooTools === 'object' && MooTools.version !== undefined) return MooTools.version;
