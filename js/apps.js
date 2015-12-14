@@ -809,7 +809,7 @@ var appinfo = {
     },
     'Bootstrap': {
         icon: 'bootstrap.ico',
-        url: 'http://twitter.github.com/bootstrap/',
+        url: 'http://getbootstrap.com',
         priority: 5
     },
     'Ning': {
