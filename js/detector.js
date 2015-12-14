@@ -464,9 +464,9 @@
     // 9: detect based on defined css classes
     // 根据 css 类判断
     var cssClasses = {
-        'Bootstrap': ['hero-unit', '.carousel-control', '[class^="icon-"]:last-child']
+        'Bootstrap': ['hero-unit', '.carousel-control', '[class^="icon-"]:last-child'],
+        'Font Awesome': ['.fa', '.fa-', '.fa-lg']
     };
-
     for (var t in cssClasses) {
         if (t in _apps) continue;
 
@@ -491,19 +491,18 @@
                 if (act === true) break;
             }
 
-            found = found & act;
+            found = found && act;
         }
 
         if (found === true) {
             _apps[t] = -1;
-        } else {
-            break;
         }
     }
 
     // 10: 根据引用的css文件的href判断
     var cssLinkName = {
-        'Bootstrap': /bootstrap(-theme)?\.(min\.)?css/
+        'Bootstrap': /bootstrap(-theme)?\.(min\.)?css/,
+        'Font Awesome': /font-awesome\.(min\.)?css/
     };
 
     cssLinks = document.styleSheets;
