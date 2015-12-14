@@ -234,6 +234,12 @@ var appinfo = {
         priority: 1
     },
 
+    'Pusher': {
+        icon: 'pusher.ico',
+        url: 'https://pusher.com',
+        priority: 1
+    },
+
     'Joomla': {
         icon: 'Joomla.ico',
         url: 'http://joomla.org',
@@ -543,7 +549,7 @@ var appinfo = {
     },
     "jQuery.hotkeys": {
         "url": "https://github.com/jeresig/jquery.hotkeys",
-        "priority": 2
+        "priority": 1.9
     },
     "spin.js": {
         "icon": "spin.js.ico",
