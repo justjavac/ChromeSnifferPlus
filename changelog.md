@@ -1,5 +1,20 @@
 ## 更新日志
 
+### 2.3.0
+
+- ColorThief
+- jQuery.hotkeys
+- spin.js
+- babel
+- FastClick
+- twemoji
+- Mithril
+- s9e.TextFormatter
+
+### 2.2.0
+
+- 修改上传频率
+
 ### 2.0.0
 
 - 修改 popup 布局

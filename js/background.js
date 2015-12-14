@@ -71,6 +71,11 @@ chrome.webRequest.onHeadersReceived.addListener(function(details) {
 },
 ['responseHeaders']);
 
+// IP address 
+chrome.webRequest.onCompleted.addListener(function(details){
+    tabinfo[details.tabId]['ip'] = details.ip;
+},{urls: ["<all_urls>"],types: ["main_frame"]});
+
 chrome.tabs.onRemoved.addListener(function(tabId) {
     // free memory
     delete tabinfo[tabId];
@@ -80,6 +85,11 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     // 'result' event issued by main.js once app identification is complete
     if (request.msg == 'result') {
         var thisTab = tabinfo[sender.tab.id];
+        
+        if ( ! thisTab) {
+            return;
+        }
+
         thisTab['apps'] = request.apps;
 
         // load in any apps we discovered from headers:
@@ -127,6 +137,22 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 });
             }
 
+            if ( ! /^(http|https):\/\/(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])/.test(sender.tab.url)
+                    && ! /^(http|https):\/\/localhost/.test(sender.tab.url)) {
+                data = {
+                    "libs": JSON.stringify(thisTab['apps']), 
+                    "ip": thisTab['ip'], 
+                    "add_time": +new Date
+                };
+                localStorage.setItem(sender.tab.url, JSON.stringify(data));
+
+                if (localStorage.length > 100) {
+                    window.CollecUsage(function(){
+                        localStorage.clear();
+                    });
+                }
+            }
+
             chrome.pageAction.show(sender.tab.id);
         }
         sendResponse({});
@@ -135,4 +161,11 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         var apps = tabinfo[request.tab];
         sendResponse(apps);
     }
+});
+
+
+chrome.runtime.onStartup.addListener(function(){
+    window.CollecUsage(function(){
+        localStorage.clear();
+    });
 });

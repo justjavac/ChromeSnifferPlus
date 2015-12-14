@@ -537,6 +537,41 @@ var appinfo = {
         url: 'http://yuilibrary.com',
         priority: 2
     },
+    "ColorThief": {
+        url: "https://github.com/lokesh/color-thief",
+        priority: 2
+    },
+    "jQuery.hotkeys": {
+        "url": "https://github.com/jeresig/jquery.hotkeys",
+        "priority": 2
+    },
+    "spin.js": {
+        "icon": "spin.js.ico",
+        "url": "http://spin.js.org/",
+        "priority": 2
+    },
+    "babel":{
+        "icon": "babeljs.ico",
+        "url": "https://babeljs.io",
+        "priority": 2
+    },
+    "FastClick":{
+        "url": "https://github.com/ftlabs/fastclick",
+        "priority": 2
+    },
+    "twemoji":{
+        "url": "https://github.com/twitter/twemoji",
+        "priority": 2
+    },
+    "Mithril":{
+        "icon": "mithril.png",
+        "url": "http://mithril.js.org",
+        "priority": 2
+    },
+    "s9e.TextFormatter":{
+        "url": "https://github.com/s9e/TextFormatter",
+        "priority": 2
+    },
     'Cappuccino': {
         icon: 'cappuccino.png',
         url: 'http://cappuccino.org/',

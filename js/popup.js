@@ -1,5 +1,9 @@
 var bg = chrome.extension.getBackgroundPage();
 
+window.CollecUsage(function(){
+    localStorage.clear();
+});
+
 chrome.tabs.getSelected(null,
 function(tab) {
     chrome.extension.sendMessage({
@@ -19,7 +23,7 @@ function(tab) {
             // i'm lazy to fill all kind of the information :(
             if (!app.title) app.title = appid;
             if (!app.url) app.url = appinfo[''].url.replace('%s', appid); // it's google one
-            if (!app.icon) app.icon = appinfo[''].icon;
+            // if (!app.icon) app.icon = appinfo[''].icon;
 
             if (apps[appid] != "-1") {
                 app.title = appid + ' <span class="lib_version">' + apps[appid] + '</span>';
@@ -27,17 +31,21 @@ function(tab) {
 
             // use DOM to avoid error
             var link = document.createElement('a');
-            var icon = document.createElement('img');
-            var text = document.createElement('span');
-
             link.target = "_blank";
             // link.title = app.title;
             link.href = app.url;
 
-            icon.width = 16;
-            icon.height = 16;
-            icon.src = "apps/" + app.icon;
+            if (app.icon !== undefined) {
+                var icon = document.createElement('img');
+                icon.width = 16;
+                icon.height = 16;
+                icon.src = "apps/" + app.icon;
+            } else {
+                var icon = document.createElement('span');
+                icon.className = "icon";
+            }
 
+            var text = document.createElement('span');
             text.innerHTML = app.title;
 
             link.appendChild(icon);
