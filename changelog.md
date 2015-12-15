@@ -1,4 +1,13 @@
-## 更新日志
+## Change Logs
+
+### 2.7.0
+
+- upload data where popup
+- modified frequency
+
+### 2.6.0
+
+- fix bugs
 
 ### 2.4.0
 
@@ -21,11 +30,11 @@
 
 ### 2.0.0
 
-- 修改 popup 布局
+- popup layout
 
 ### 1.6.0
 
-- 增加 IP 判断
+- check IP
 
 ### 1.5.0
 
