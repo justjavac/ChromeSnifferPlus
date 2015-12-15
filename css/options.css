@@ -5,15 +5,9 @@ body {
 }
 
 .box {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-o-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	-o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	background-color: #f4f4f4;
+	background-color: #fff;
 	border: 0px solid white;
 }
 
