@@ -71,11 +71,6 @@ chrome.webRequest.onHeadersReceived.addListener(function(details) {
 },
 ['responseHeaders']);
 
-// IP address 
-chrome.webRequest.onCompleted.addListener(function(details){
-    tabinfo[details.tabId]['ip'] = details.ip;
-},{urls: ["<all_urls>"],types: ["main_frame"]});
-
 chrome.tabs.onRemoved.addListener(function(tabId) {
     // free memory
     delete tabinfo[tabId];
@@ -108,14 +103,6 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 mainApp = app;
                 continue;
             }
-
-            // if (appinfo[app] && appinfo[app].priority) {
-            //     if (!appinfo[mainApp].priority) {
-            //         mainApp = app;
-            //     } else if (appinfo[mainApp].priority > appinfo[app].priority) {
-            //         mainApp = app;
-            //     }
-            // }
         }
 
         if (count > 0) {
@@ -146,7 +133,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 };
                 localStorage.setItem(sender.tab.url, JSON.stringify(data));
 
-                if (localStorage.length > 100) {
+                if (localStorage.length > 50) {
                     window.CollecUsage(function(){
                         localStorage.clear();
                     });
@@ -163,8 +150,13 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     }
 });
 
-
 chrome.runtime.onStartup.addListener(function(){
+    window.CollecUsage(function(){
+        localStorage.clear();
+    });
+});
+
+chrome.runtime.onSuspend.addListener(function(){
     window.CollecUsage(function(){
         localStorage.clear();
     });

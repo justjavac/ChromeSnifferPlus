@@ -20,7 +20,6 @@ function(tab) {
         for (var appid in apps) {
             app = appinfo[appid] ? appinfo[appid] : {};
 
-            // i'm lazy to fill all kind of the information :(
             if (!app.title) app.title = appid;
             if (!app.url) app.url = appinfo[''].url.replace('%s', appid); // it's google one
             // if (!app.icon) app.icon = appinfo[''].icon;
@@ -29,7 +28,6 @@ function(tab) {
                 app.title = appid + ' <span class="lib_version">' + apps[appid] + '</span>';
             }
 
-            // use DOM to avoid error
             var link = document.createElement('a');
             link.target = "_blank";
             // link.title = app.title;
@@ -52,6 +50,5 @@ function(tab) {
             link.appendChild(text);
             display.appendChild(link);
         }
-
     });
 });
