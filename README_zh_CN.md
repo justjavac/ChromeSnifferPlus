@@ -7,6 +7,8 @@ ChromeSnifferPlus： Chrome 探测器，可以探测正在使用的开源软件�
 
 - [Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh)
 
+如果你使用的是 Chrome 内核的国产浏览器，可以直接下载已经打包好的 [crx 文件](https://github.com/justjavac/ChromeSnifferPlus/releases) 进行安装。 
+
 ### 介绍
 
 本插件是一个扩展版的 Appspector（原名 ChromeSniffer）。
