@@ -22,6 +22,10 @@ view [change log](./changelog.md)
 
 [中文介绍](./README_zh_CN.md)
 
+### Install
+
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh)
+
 ### Screenshot
 
 ![ChromeSnifferPlus Screenshot](./screenshot/shot1.png) &nbsp;&nbsp;&nbsp;&nbsp;
