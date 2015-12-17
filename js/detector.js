@@ -501,8 +501,14 @@
     // 根据 css 类判断
     var cssClasses = {
         'Bootstrap': ['hero-unit', '.carousel-control', '[class^="icon-"]:last-child'],
-        'Font Awesome': ['.fa', '.fa-', '.fa-lg']
-    };
+        'Font Awesome': ['.fa', '.fa-', '.fa-lg'],
+        'Flat UI': ['[class^="fui-"]', '[class*="fui-"]'],
+        'Semantic UI': ['.ui', '.ui.inverted', '.ui.negative'],
+        'Foundation': ['.foundation-mq'],
+        'Gumby': ['.gumby-no-touch', '.gumby-touch'],
+        'Pure': ['.pure-img', '.pure-button', '.pure-g', '.pure-u'],
+        'UI Kit': ['.uk-grid-match', '[class*="uk-push-"]', '[class*="uk-pull-"] ']
+      };
     for (var t in cssClasses) {
         if (t in _apps) continue;
 
@@ -538,7 +544,13 @@
     // 10: 根据引用的css文件的href判断
     var cssLinkName = {
         'Bootstrap': /bootstrap(-theme)?\.(min\.)?css/,
-        'Font Awesome': /font-awesome\.(min\.)?css/
+        'Font Awesome': /font-awesome\.(min\.)?css/,
+        'Flat UI': /flat-ui\.(min\.)?css/,
+        'Semantic UI': /semantic\.(min\.)?css/,
+        'Foundation': /foundation\.(min\.)?css/,
+        'Gumby': /gumby\.(min\.)?css/,
+        'Pure': /pure(\-min)?\.css/,
+        'UI Kit': /uikit\.(docs\.)?(min\.)?css/
     };
 
     cssLinks = document.styleSheets;

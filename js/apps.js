@@ -930,7 +930,36 @@ var appinfo = {
         url: 'https://fortawesome.github.io/Font-Awesome/',
         priority: 5
     },
-
+    'Flat UI': {
+        icon: 'flatUI.png',
+        url: 'http://designmodo.github.io/Flat-UI/',
+        priority: 5
+    },
+    'Semantic UI': {
+        icon: 'semanticUI.png',
+        url: 'http://semantic-ui.com/',
+        priority: 5
+    },
+    'Foundation': {
+      icon: 'foundation.ico',
+      url: 'http://foundation.zurb.com/',
+      priority: 5
+    },
+    'Gumby': {
+      icon: 'gumby.ico',
+      url: 'http://www.gumbyframework.com/',
+      priority: 5
+    },
+    'Pure': {
+      icon: 'pure.png',
+      url: 'http://purecss.io/',
+      priority: 5
+    },
+    'UI Kit': {
+      icon: 'UIKit.ico',
+      url: 'http://getuikit.com/',
+      priority: 5
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
