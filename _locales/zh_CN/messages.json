@@ -8,7 +8,7 @@
 		"description": "extension short name."
 	},
 	"extDesc": {
-		"message": "探测当前网页正在使用的开源软件或者js类库，web开发者必备神器。",
+		"message": "探测当前网页所使用的类库、框架和服务器环境，为开发者提供了方便。",
 		"description": "extension description."
 	},
 	"extIntroTitle": {
@@ -16,17 +16,17 @@
 		"description": "option page introduction title."
 	},
 	"extIntroduction": {
-		"message": "Chrome Sniffer： Chrome 探测器，通过本插件，您可以探测：",
+		"message": "Chrome Sniffer：Chrome 网页探测器，通过本插件，你可以探测：",
 		"description": "option page introduction."
 	},
 	"extIntroductionJavascript": {
-		"message": "javascript 库： jQuery、ExtJS、Angular 等。"
+		"message": "常用 JavaScript 库： jQuery、ExtJS、Angular 等；"
 	},
 	"extIntroductionWebAPI": {
-		"message": "常用的 web 服务： 百度统计、cnzz、Google Analytics 等。"
+		"message": "常用 Web 服务： 百度统计、CNZZ、Google Analytics 等；"
 	},
 	"extIntroductionWebFramework": {
-		"message": "Web 框架： WordPress、phpBB、Drupal、MediaWiki 等。"
+		"message": "常用 Web 框架： WordPress、phpBB、Drupal、MediaWiki 等；"
 	},
 	"extIntroductionWebSever": {
 		"message": "服务器环境： PHP、Apache、nginx 等。"
@@ -35,19 +35,19 @@
 		"message": "源码地址"
 	},
 	"extIntroductionNotice": {
-		"message": "开发者总是喜欢尽量隐藏某些东东，所以可能存在误判。"
+		"message": "开发者总喜欢隐藏某些特征信息，所以可能存在误判。"
 	},
 	"extIntroductionDeveloper": {
-		"message": "如果你开发了类库或者框架，可以"
+		"message": "如果你发现了新的类库或框架，你可以"
 	},
 	"extIntroductionIssues": {
-		"message": "创建Issues"
+		"message": "提出反馈"
 	},
 	"extIntroductionThanks": {
 		"message": "谢谢"
 	},
 	"pageActionTitle": {
-		"message": "点击查看详细信息...",
+		"message": "点击查看详情...",
 		"description": "page action title."
 	}
 }
