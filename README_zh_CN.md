@@ -32,6 +32,10 @@ ChromeSnifferPlus： Chrome 探测器，可以探测正在使用的开源软件�
 
 查看：[更新日志](./changelog.md)
 
+### 隐私
+
+ChromeSnifferPlus 会手机用户的 IP 地址，插件版本信息，探测的网站 url 以及探测到的库。
+
 ### 截图
 
 ![ChromeSnifferPlus效果截图](./screenshot/shot1.png) &nbsp;&nbsp;&nbsp;&nbsp;
