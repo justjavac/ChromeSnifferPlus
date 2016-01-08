@@ -1,8 +1,8 @@
 var bg = chrome.extension.getBackgroundPage();
 
-window.CollecUsage(function(){
-    localStorage.clear();
-});
+// window.CollecUsage(function(){
+//     localStorage.clear();
+// });
 
 chrome.tabs.getSelected(null,
 function(tab) {
