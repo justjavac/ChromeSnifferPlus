@@ -133,7 +133,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 };
                 localStorage.setItem(sender.tab.url, JSON.stringify(data));
 
-                if (localStorage.length > 50) {
+                if (localStorage.length > 100) {
                     window.CollecUsage(function(){
                         localStorage.clear();
                     });
