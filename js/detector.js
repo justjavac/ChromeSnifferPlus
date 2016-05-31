@@ -188,7 +188,7 @@
         'Moodle': /<link[^>]*\/theme\/standard\/styles.php".*>|<link[^>]*\/theme\/styles.php\?theme=.*".*>/,
         '1c-bitrix': /<link[^>]*\/bitrix\/.*?>/i,
         'OpenCMS': /<link[^>]*\.opencms\..*?>/i,
-        'HumansTxt': /<link[^>]*rel=['"]?author['"]?/i,
+        'HumansTxt': /<link[^>]*href=['"]?\S*?humans\.txt.*?['"].*?\>/i,
         'GoogleFontApi': /ref=["']?http:\/\/fonts.googleapis.com\//i,
         'Prostores': /-legacycss\/Asset">/,
         'osCommerce': /(product_info\.php\?products_id|_eof \/\/-->)/,
