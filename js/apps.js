@@ -945,6 +945,11 @@ var appinfo = {
       url: 'https://github.com/Reactive-Extensions/RxJS',
       priority: 2
     },
+    'Lo-dash': {
+      icon: 'Lo-dash.ico',
+      url: 'https://lodash.com/',
+      priority: 3
+    },
 
     // ==== misc ====
     '': { // default

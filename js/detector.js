@@ -372,7 +372,7 @@
             return window.Backbone && typeof(window.Backbone.sync) === 'function';
         },
         'Underscore.js': function() {
-            return window._ && typeof(window._.identity) === 'function' && window._.identity('abc') === 'abc';
+            return window._ && typeof(window._.identity) === 'function' && window._.identity('abc') === 'abc' && window._.name === '_';
         },
         'Spine': function() {
             return window.Spine;
@@ -412,6 +412,9 @@
         },
         'avalon':function () {
             return window.avalon;
+        },
+        'Lo-dash':function () {
+          return window._ && window._.name === 'lodash';
         }
     };
 
@@ -502,6 +505,9 @@
         },
         'avalon':function () {
             if(window.avalon) return window.avalon.version;
+        },
+        'Lo-dash':function () {
+            if(window._ && window._.name === 'lodash') return window._.VERSION;
         }
     };
 
