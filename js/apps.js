@@ -940,6 +940,11 @@ var appinfo = {
         url: 'http://vuejs.org/',
         priority: 2
     },
+    'RxJs': {
+      icon: 'RxJs.ico',
+      url: 'https://github.com/Reactive-Extensions/RxJS',
+      priority: 2
+    },
 
     // ==== misc ====
     '': { // default
