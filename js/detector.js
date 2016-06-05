@@ -400,6 +400,18 @@
         },
         'moment': function() {
             return window.moment;
+        },
+        'RxJs': function() {
+            return window.Rx;
+        },
+        'Vue': function() {
+            return window.Vue;
+        },
+        'polymer':function () {
+            return window.Polymer;
+        },
+        'avalon':function () {
+            return window.avalon;
         }
     };
 
@@ -481,6 +493,12 @@
         },
         'moment': function() {
             if (window.moment && window.moment.version) return window.moment.version;
+        },
+        'Vue': function() {
+            if(window.Vue) return window.Vue.version;
+        },
+        'avalon':function () {
+            if(window.avalon) return window.avalon.version;
         }
     };
 
