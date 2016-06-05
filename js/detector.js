@@ -497,8 +497,11 @@
         'Vue': function() {
             if(window.Vue) return window.Vue.version;
         },
+        'polymer':function () {
+            if(window.Polymer) return window.Polymer.version;
+        },
         'avalon':function () {
-            if(window.avalon) return window.avalon.VERSION;
+            if(window.avalon) return window.avalon.version;
         }
     };
 
