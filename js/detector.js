@@ -498,7 +498,7 @@
             if(window.Vue) return window.Vue.version;
         },
         'avalon':function () {
-            if(window.avalon) return window.avalon.version;
+            if(window.avalon) return window.avalon.VERSION;
         }
     };
 
