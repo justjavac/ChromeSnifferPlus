@@ -930,6 +930,26 @@ var appinfo = {
         url: 'https://fortawesome.github.io/Font-Awesome/',
         priority: 5
     },
+    'polymer': {
+        icon: 'polymer.ico',
+        url: 'https://github.com/Polymer/polymer',
+        priority: 2
+    },
+    'Vue': {
+        icon: 'Vue.ico',
+        url: 'http://vuejs.org/',
+        priority: 2
+    },
+    'RxJs': {
+      icon: 'RxJs.ico',
+      url: 'https://github.com/Reactive-Extensions/RxJS',
+      priority: 2
+    },
+    'Lo-dash': {
+      icon: 'Lo-dash.ico',
+      url: 'https://lodash.com/',
+      priority: 3
+    },
 
     // ==== misc ====
     '': { // default
