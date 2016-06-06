@@ -372,7 +372,7 @@
             return window.Backbone && typeof(window.Backbone.sync) === 'function';
         },
         'Underscore.js': function() {
-            return window._ && typeof(window._.identity) === 'function' && window._.identity('abc') === 'abc';
+            return window._ && typeof(window._.identity) === 'function' && window._.identity('abc') === 'abc' && window._.name === '_';
         },
         'Spine': function() {
             return window.Spine;
@@ -400,6 +400,21 @@
         },
         'moment': function() {
             return window.moment;
+        },
+        'RxJs': function() {
+            return window.Rx;
+        },
+        'Vue': function() {
+            return window.Vue;
+        },
+        'polymer':function () {
+            return window.Polymer;
+        },
+        'avalon':function () {
+            return window.avalon;
+        },
+        'Lo-dash':function () {
+          return window._ && window._.name === 'lodash';
         }
     };
 
@@ -481,6 +496,18 @@
         },
         'moment': function() {
             if (window.moment && window.moment.version) return window.moment.version;
+        },
+        'Vue': function() {
+            if(window.Vue) return window.Vue.version;
+        },
+        'polymer':function () {
+            if(window.Polymer) return window.Polymer.version;
+        },
+        'avalon':function () {
+            if(window.avalon) return window.avalon.version;
+        },
+        'Lo-dash':function () {
+            if(window._ && window._.name === 'lodash') return window._.VERSION;
         }
     };
 
