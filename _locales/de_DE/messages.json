@@ -1,0 +1,53 @@
+{
+	"extName": {
+		"message": "Chrome Sniffer Plus",
+		"description": "Erweiterungsname."
+	},
+	"extShortName": {
+		"message": "ChromeSnifferPlus",
+		"description": "Erweiterungskurzname."
+	},
+	"extDesc": {
+		"message": "Erkenne Web Frameworks und Javascript Bibliotheken auf Webseiten.",
+		"description": "extension description."
+	},
+	"extIntroTitle": {
+		"message": "Einführung",
+		"description": "Einführungstitel Optionsseite."
+	},
+	"extIntroduction": {
+		"message": "Chrome Sniffer: Du kannst schnüffeln",
+		"description": "Optionen Einführungsseite."
+	},
+	"extIntroductionJavascript": {
+		"message": "Javascript Library: jQuery, ExtJS, Angular ..."
+	},
+	"extIntroductionWebAPI": {
+		"message": "Web APIs: Blogger, Google Analytics ..."
+	},
+	"extIntroductionWebFramework": {
+		"message": "Web Frameworks: WordPress, phpBB, Drupal, MediaWiki, codeigniter ..."
+	},
+	"extIntroductionWebSever": {
+		"message": "Web Server: PHP, Apache, nginx, IIS ..."
+	},
+	"extIntroductionSource": {
+		"message": "Quellcode:"
+	},
+	"extIntroductionNotice": {
+		"message": "Entwickler wollen immer irgendwas verbergen. So kann es zu Irrtümern kommen."
+	},
+	"extIntroductionDeveloper": {
+		"message": "Wenn du ein Entwickler bist, kannst du"
+	},
+	"extIntroductionIssues": {
+		"message": "Ticket erstellen"
+	},
+	"extIntroductionThanks": {
+		"message": "Danke"
+	},
+	"pageActionTitle": {
+		"message": "Klicke für Details...",
+		"description": "Seiten Aktionstitel."
+	}
+}
