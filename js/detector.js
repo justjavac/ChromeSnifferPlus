@@ -22,6 +22,8 @@
         'generator': {
             'Joomla': /joomla!?\s*([\d\.]+)?/i,
             'vBulletin': /vBulletin\s*(.*)/i,
+            'Drupal8': /Drupal (8[\d\.]*)?/i,
+            'Drupal': /Drupal ([\d]+)?/i,
             'WordPress': /WordPress\s*(.*)/i,
             'XOOPS': /xoops/i,
             'Plone': /plone/i,
@@ -225,7 +227,8 @@
             return document.cookie.indexOf("LtpaToken") != -1 || document.cookie.indexOf("DomAuthSessId") != -1;
         },
         'Drupal': function() {
-            return window.Drupal;
+            // Do not test if Drupal8 was already detected.
+            return !_apps.Drupal8 && window.Drupal;
         },
         'Flarum': function() {
             return window.System && System.has && System.has('flarum/app');
@@ -433,6 +436,14 @@
         },
         'Prototype': function() {
             if ('Prototype' in window && Prototype.Version !== undefined) return window.Prototype.Version;
+        },
+        'Drupal': function() {
+            // Drupal does not provide detectable versions other than its major (for security purposes).
+            // However, older versions can be deduced based on which properties are avilable in the Drupal global.
+            if ('Drupal' in window && Drupal.behaviors !== undefined) return '6';
+            if ('Drupal' in window && Drupal.extend !== undefined) return '5';
+            // There is nothing in JS DOM parsing that can disquish versions older than 4.7.
+            return '4.7';
         },
         'script.aculo.us': function() {
             if ('Scriptaculous' in window && Scriptaculous.Version !== undefined) return window.Scriptaculous.Version;

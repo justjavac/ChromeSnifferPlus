@@ -164,9 +164,14 @@ var appinfo = {
     },
 
     'Drupal': {
-        icon: 'Drupal.ico',
-        url: 'http://drupal.org',
+        icon: 'Drupal.png',
+        url: 'https://www.drupal.org/',
         priority: 1
+    },
+    'Drupal8': {
+        icon: 'Drupal8.png',
+        url: 'https://www.drupal.org/8',
+        priority: 0.9 // higher priority compared with Drupal
     },
     'Ubercart': {
         icon: 'Ubercart.ico',
