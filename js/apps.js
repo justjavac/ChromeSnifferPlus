@@ -169,6 +169,7 @@ var appinfo = {
         priority: 1
     },
     'Drupal8': {
+        title: 'Drupal',
         icon: 'Drupal8.ico',
         url: 'https://www.drupal.org/8',
         priority: 0.9 // higher priority compared with Drupal
