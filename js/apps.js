@@ -164,12 +164,13 @@ var appinfo = {
     },
 
     'Drupal': {
-        icon: 'Drupal.png',
+        icon: 'Drupal.ico',
         url: 'https://www.drupal.org/',
         priority: 1
     },
     'Drupal8': {
-        icon: 'Drupal8.png',
+        title: 'Drupal',
+        icon: 'Drupal8.ico',
         url: 'https://www.drupal.org/8',
         priority: 0.9 // higher priority compared with Drupal
     },
