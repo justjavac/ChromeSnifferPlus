@@ -231,7 +231,7 @@
             if (_apps.Drupal8 !== undefined || _apps.Drupal !== undefined) return;
             // To ensure that the D8 logo is used, we must execute test here.
             // This way it doesn't test the normal "Drupal" one.
-            return 'Drupal' in window && Drupal.throwError !== undefined return '8';
+            return 'Drupal' in window && Drupal.throwError !== undefined && '8';
         },
         'Drupal': function() {
             // Do not JS test if Drupal was already detected.
