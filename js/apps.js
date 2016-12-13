@@ -941,14 +941,19 @@ var appinfo = {
         priority: 2
     },
     'RxJs': {
-      icon: 'RxJs.ico',
-      url: 'https://github.com/Reactive-Extensions/RxJS',
-      priority: 2
+        icon: 'RxJs.ico',
+        url: 'https://github.com/Reactive-Extensions/RxJS',
+        priority: 2
     },
     'Lo-dash': {
-      icon: 'Lo-dash.ico',
-      url: 'https://lodash.com/',
-      priority: 3
+        icon: 'Lo-dash.ico',
+        url: 'https://lodash.com/',
+        priority: 3
+    },
+    'Webpack': {
+        icon: 'Webpack.ico',
+        url: 'https://github.com/webpack/webpack',
+        priority: 3
     },
 
     // ==== misc ====

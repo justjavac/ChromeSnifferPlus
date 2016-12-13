@@ -415,6 +415,9 @@
         },
         'Lo-dash':function () {
           return window._ && window._.name === 'lodash';
+        },
+        'Webpack':function () {
+          return window.webpackJsonp;
         }
     };
 
