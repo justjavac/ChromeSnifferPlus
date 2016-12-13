@@ -22,6 +22,8 @@
         'generator': {
             'Joomla': /joomla!?\s*([\d\.]+)?/i,
             'vBulletin': /vBulletin\s*(.*)/i,
+            'Drupal8': /Drupal (8[\d\.]*)/i,    // Drupal 8 logo.
+            'Drupal': /Drupal ([1-7][\d\.]*)/i, // Original Drupal logo.
             'WordPress': /WordPress\s*(.*)/i,
             'XOOPS': /xoops/i,
             'Plone': /plone/i,
@@ -188,7 +190,7 @@
         'Moodle': /<link[^>]*\/theme\/standard\/styles.php".*>|<link[^>]*\/theme\/styles.php\?theme=.*".*>/,
         '1c-bitrix': /<link[^>]*\/bitrix\/.*?>/i,
         'OpenCMS': /<link[^>]*\.opencms\..*?>/i,
-        'HumansTxt': /<link[^>]*rel=['"]?author['"]?/i,
+        'HumansTxt': /<link[^>]*href=['"]?\S*?humans\.txt.*?['"].*?\>/i,
         'GoogleFontApi': /ref=["']?http:\/\/fonts.googleapis.com\//i,
         'Prostores': /-legacycss\/Asset">/,
         'osCommerce': /(product_info\.php\?products_id|_eof \/\/-->)/,
@@ -224,7 +226,16 @@
         'Domino': function() {
             return document.cookie.indexOf("LtpaToken") != -1 || document.cookie.indexOf("DomAuthSessId") != -1;
         },
+        'Drupal8': function() {
+            // Do not JS test if Drupal was already detected.
+            if (_apps.Drupal8 !== undefined || _apps.Drupal !== undefined) return;
+            // To ensure that the D8 logo is used, we must execute test here.
+            // This way it doesn't test the normal "Drupal" one.
+            return 'Drupal' in window && Drupal.throwError !== undefined && '8';
+        },
         'Drupal': function() {
+            // Do not JS test if Drupal was already detected.
+            if (_apps.Drupal8 !== undefined || _apps.Drupal !== undefined) return;
             return window.Drupal;
         },
         'Flarum': function() {
@@ -436,6 +447,15 @@
         },
         'Prototype': function() {
             if ('Prototype' in window && Prototype.Version !== undefined) return window.Prototype.Version;
+        },
+        'Drupal': function() {
+            // Drupal does not provide detectable versions other than its major (for security purposes).
+            // However, major versions can be deduced from methods/properties avilable in Drupal global.
+            if ('Drupal' in window && Drupal.detachBehaviors !== undefined) return '7';
+            if ('Drupal' in window && Drupal.behaviors !== undefined) return '6';
+            if ('Drupal' in window && Drupal.extend !== undefined) return '5';
+            // There is nothing in JS DOM parsing that can disquish versions older than 4.7.
+            return '4.7 (or older)';
         },
         'script.aculo.us': function() {
             if ('Scriptaculous' in window && Scriptaculous.Version !== undefined) return window.Scriptaculous.Version;
