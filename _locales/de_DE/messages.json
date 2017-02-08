@@ -1,10 +1,10 @@
 {
 	"extName": {
-		"message": "Chrome Sniffer Plus",
+		"message": "Library Sniffer for Google Chrome",
 		"description": "Erweiterungsname."
 	},
 	"extShortName": {
-		"message": "ChromeSnifferPlus",
+		"message": "LibSniffer",
 		"description": "Erweiterungskurzname."
 	},
 	"extDesc": {
@@ -16,7 +16,7 @@
 		"description": "Einführungstitel Optionsseite."
 	},
 	"extIntroduction": {
-		"message": "Chrome Sniffer: Du kannst schnüffeln",
+		"message": "Library Sniffer: Du kannst schnüffeln",
 		"description": "Optionen Einführungsseite."
 	},
 	"extIntroductionJavascript": {
