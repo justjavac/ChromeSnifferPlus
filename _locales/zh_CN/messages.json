@@ -1,10 +1,10 @@
 {
 	"extName": {
-		"message": "Chrome Sniffer Plus",
+		"message": "Library Sniffer for Google Chrome",
 		"description": "extension name."
 	},
 	"extShortName": {
-		"message": "ChromeSnifferPlus",
+		"message": "LibSniffer",
 		"description": "extension short name."
 	},
 	"extDesc": {
@@ -16,7 +16,7 @@
 		"description": "option page introduction title."
 	},
 	"extIntroduction": {
-		"message": "Chrome Sniffer：Chrome 网页探测器，通过本插件，你可以探测：",
+		"message": "Library Sniffer：Chrome 网页探测器，通过本插件，你可以探测：",
 		"description": "option page introduction."
 	},
 	"extIntroductionJavascript": {
