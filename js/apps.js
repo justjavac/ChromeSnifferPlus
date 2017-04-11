@@ -961,6 +961,11 @@ var appinfo = {
         url: 'https://github.com/webpack/webpack',
         priority: 3
     },
+    'Django': {
+        icon: 'django.ico',
+        url: 'https://www.djangoproject.com/',
+        priority: 1
+    },
 
     // ==== misc ====
     '': { // default
