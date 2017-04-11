@@ -961,7 +961,11 @@ var appinfo = {
         url: 'https://github.com/webpack/webpack',
         priority: 3
     },
-
+    'React': {
+        icon: 'React.ico',
+        url: 'https://facebook.github.io/react/',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
