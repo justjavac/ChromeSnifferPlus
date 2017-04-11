@@ -677,7 +677,7 @@ var appinfo = {
     },
     'Underscore.js': {
         icon: 'underscorejs.ico',
-        url: 'http://documentcloud.github.com/underscore/',
+        url: 'http://underscorejs.org/',
         priority: 2.9
     },
 
