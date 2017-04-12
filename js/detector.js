@@ -199,6 +199,7 @@
         // 七牛云存储加速
         'Shibboleth': /<form action="\/idp\/Authn\/UserPassword" method="post">/,
         'Django': /<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>/
+        'React': /<[^>]+data-react/
     };
 
     for (var t in text_tests) {
