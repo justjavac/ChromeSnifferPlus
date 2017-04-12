@@ -677,7 +677,7 @@ var appinfo = {
     },
     'Underscore.js': {
         icon: 'underscorejs.ico',
-        url: 'http://documentcloud.github.com/underscore/',
+        url: 'http://underscorejs.org/',
         priority: 2.9
     },
 
@@ -966,7 +966,11 @@ var appinfo = {
         url: 'https://www.djangoproject.com/',
         priority: 1
     },
-
+    'React': {
+        icon: 'React.ico',
+        url: 'https://facebook.github.io/react/',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
