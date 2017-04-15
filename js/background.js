@@ -34,6 +34,9 @@ var knownHeaders = {
     },
     'via': {
         'Varnish': /(.*) varnish/
+    },
+    'set-cookie': {
+        'Laravel': /laravel_session/
     }
 };
 

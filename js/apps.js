@@ -971,6 +971,11 @@ var appinfo = {
         url: 'https://facebook.github.io/react/',
         priority: 3
     },
+    'Laravel': {
+        icon: 'Laravel.png',
+        url: 'https://laravel.com/',
+        priority: 1
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
