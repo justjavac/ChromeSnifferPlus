@@ -431,7 +431,10 @@
         },
         'Webpack':function () {
           return window.webpackJsonp;
-        }
+        },
+        'Mixpanel':function () {
+          return window.mixpanel;
+        },
     };
 
     for (var t in js_tests) {

@@ -976,6 +976,11 @@ var appinfo = {
         url: 'https://laravel.com/',
         priority: 1
     },
+    'Mixpanel': {
+        icon: 'Mixpanel.png',
+        url: 'https://mixpanel.com/',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
