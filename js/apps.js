@@ -996,6 +996,11 @@ var appinfo = {
         url: 'https://sumo.com/',
         priority: 5
     },
+    'lighttpd': {
+        icon: 'lighttpd.png',
+        url: 'https://www.lighttpd.net/',
+        priority: 1
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',

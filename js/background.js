@@ -30,7 +30,8 @@ var knownHeaders = {
         'Domino': /Lotus-Domino/,
         'Play': /Play\/?(.*)/,
         'nginx': /nginx\/?(.*)/,
-        'IIS': /Microsoft-IIS\/?(.*)/
+        'IIS': /Microsoft-IIS\/?(.*)/,
+        'lighttpd': /lighttpd(?:\/([\d.]+))?/
     },
     'via': {
         'Varnish': /(.*) varnish/
