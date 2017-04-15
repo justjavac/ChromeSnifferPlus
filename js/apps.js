@@ -991,6 +991,11 @@ var appinfo = {
         url: 'https://heapanalytics.com/',
         priority: 3
     },
+    'SumoMe': {
+        icon: 'SumoMe.png',
+        url: 'https://sumo.com/',
+        priority: 5
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
