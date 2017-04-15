@@ -435,6 +435,9 @@
         'Mixpanel':function () {
           return window.mixpanel;
         },
+        'Rollbar':function () {
+          return window.Rollbar;
+        }
     };
 
     for (var t in js_tests) {

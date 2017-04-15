@@ -981,6 +981,11 @@ var appinfo = {
         url: 'https://mixpanel.com/',
         priority: 3
     },
+    'Rollbar': {
+        icon: 'Rollbar.ico',
+        url: 'https://rollbar.com/',
+        priority: 5
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
