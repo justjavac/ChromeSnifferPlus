@@ -437,6 +437,9 @@
         },
         'Rollbar':function () {
           return window.Rollbar;
+        },
+        'Heap Analytics':function () {
+          return window.heap;
         }
     };
 

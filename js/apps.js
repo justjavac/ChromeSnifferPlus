@@ -986,6 +986,11 @@ var appinfo = {
         url: 'https://rollbar.com/',
         priority: 5
     },
+    'Heap Analytics': {
+        icon: 'Heap.ico',
+        url: 'https://heapanalytics.com/',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
