@@ -198,7 +198,7 @@
         '\u4e03\u725b\u4e91\u5b58\u50a8\u52a0\u901f': /<(link|script|img)[^>]+(qiniudn\.com|qbox\.me|clouddn\.com|qiniu\.com|qnssl\.com)[^>]+>/i,
         // 七牛云存储加速
         'Shibboleth': /<form action="\/idp\/Authn\/UserPassword" method="post">/,
-        'Django': /<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>/
+        'Django': /<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>/,
         'React': /<[^>]+data-react/
     };
 
@@ -390,7 +390,7 @@
         'Spine': function() {
             return window.Spine;
         },
-        'Angular': function() {
+        'AngularJs': function() {
             return window.angular;
         },
         'Ning': function() {
@@ -510,7 +510,7 @@
         'Spine': function() {
             if (window.Spine && window.Spine.version) return window.Spine.version;
         },
-        'Angular': function() {
+        'AngularJs': function() {
             if (window.angular && window.angular.version && 'full' in window.angular.version) return window.angular.version.full;
         },
         'D3': function() {
