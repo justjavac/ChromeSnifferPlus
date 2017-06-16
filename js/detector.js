@@ -390,8 +390,11 @@
         'Spine': function() {
             return window.Spine;
         },
-        'Angular': function() {
+        'AngularJs': function() {
             return window.angular;
+        },
+        'Angular': function() {
+            return window.ng;
         },
         'Ning': function() {
             return window.ning;
@@ -427,10 +430,10 @@
             return window.avalon;
         },
         'Lo-dash':function () {
-          return window._ && window._.name === 'lodash';
+            return window._ && window._.name === 'lodash';
         },
         'Webpack':function () {
-          return window.webpackJsonp;
+            return window.webpackJsonp;
         }
     };
 
@@ -510,8 +513,18 @@
         'Spine': function() {
             if (window.Spine && window.Spine.version) return window.Spine.version;
         },
-        'Angular': function() {
+        'AngularJs': function() {
             if (window.angular && window.angular.version && 'full' in window.angular.version) return window.angular.version.full;
+        },
+
+        'Angular': function() {
+            if (window.ng && window.document.body && window.document.body.children.length > 0) {
+                var children = new Array(window.document.body.children[0]);
+                var rootCmp = children.find( function (e) {
+                    return e.attributes && 'ng-version' in e.attributes;
+                });
+                return rootCmp.attributes['ng-version'].nodeValue;
+            }
         },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;
