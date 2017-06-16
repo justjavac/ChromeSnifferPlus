@@ -599,9 +599,14 @@ var appinfo = {
         url: 'http://spinejs.com',
         priority: 1.9
     },
-    'AngularJS': {
+    'AngularJs': {
         icon: 'angular.ico',
         url: 'http://angularjs.org/',
+        priority: 1.5
+    },
+    'Angular': {
+        icon: 'angular.ico',
+        url: 'http://angular.io/',
         priority: 1.5
     },
     'D3': {
