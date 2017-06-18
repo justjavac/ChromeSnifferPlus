@@ -609,6 +609,11 @@ var appinfo = {
         url: 'http://angular.io/',
         priority: 1.5
     },
+    'Ionic': {
+        icon: 'ionic.ico',
+        url: 'http://ionicframework.com/',
+        priority: 1.5
+    },
     'D3': {
         icon: 'D3.svg',
         url: 'http://d3js.org/',
