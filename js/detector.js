@@ -528,6 +528,10 @@
                 return rootCmp.attributes['ng-version'].nodeValue;
             }
         },
+        'Ionic': function () {
+          if(window.Ionic && window.Ionic.version) return window.Ionic.version;
+          if(window.ionic && window.ionic.version) return window.ionic.version;
+        },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;
         },
