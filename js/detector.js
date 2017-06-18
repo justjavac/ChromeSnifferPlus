@@ -396,6 +396,9 @@
         'Angular': function() {
             return window.ng;
         },
+        'Ionic': function () {
+            return window.Ionic || window.ionic;
+        },
         'Ning': function() {
             return window.ning;
         },
