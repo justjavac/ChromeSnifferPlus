@@ -516,7 +516,6 @@
         'AngularJs': function() {
             if (window.angular && window.angular.version && 'full' in window.angular.version) return window.angular.version.full;
         },
-
         'Angular': function() {
             if (window.ng && window.document.body && window.document.body.children.length > 0) {
                 var children = new Array(window.document.body.children[0]);
