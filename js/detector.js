@@ -396,6 +396,9 @@
         'Angular': function() {
             return window.ng;
         },
+        'Ionic': function () {
+            return window.Ionic || window.ionic;
+        },
         'Ning': function() {
             return window.ning;
         },
@@ -516,7 +519,6 @@
         'AngularJs': function() {
             if (window.angular && window.angular.version && 'full' in window.angular.version) return window.angular.version.full;
         },
-
         'Angular': function() {
             if (window.ng && window.document.body && window.document.body.children.length > 0) {
                 var children = new Array(window.document.body.children[0]);
@@ -525,6 +527,10 @@
                 });
                 return rootCmp.attributes['ng-version'].nodeValue;
             }
+        },
+        'Ionic': function () {
+          if(window.Ionic && window.Ionic.version) return window.Ionic.version;
+          if(window.ionic && window.ionic.version) return window.ionic.version;
         },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;
