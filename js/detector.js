@@ -399,6 +399,9 @@
         'Ionic': function () {
             return window.Ionic || window.ionic;
         },
+        'Elm': function () {
+            return window.Elm;
+        },
         'Ning': function() {
             return window.ning;
         },
