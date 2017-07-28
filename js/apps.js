@@ -672,7 +672,7 @@ var appinfo = {
     },
     'Backbone.js': {
         icon: 'backbonejs.ico',
-        url: 'http://documentcloud.github.com/backbone/',
+        url: 'http://backbonejs.org',
         priority: 1.9
     },
     'Underscore.js': {
