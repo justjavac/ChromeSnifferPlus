@@ -409,7 +409,11 @@
             return window.et_params;
         },
         'SPDY': function() {
-            return window.chrome.loadTimes().wasFetchedViaSpdy;
+            if (window.PerformanceNavigationTiming) {
+              const ntEntry = performance.getEntriesByType('navigation')[0];
+              return ['h2', 'hq'].includes(ntEntry.nextHopProtocol);
+            }
+            return false;
         },
         'LiveStreet': function() {
             return window.LIVESTREET_SECURITY_KEY;
