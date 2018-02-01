@@ -588,6 +588,8 @@
 
             /* Iterate through all registered css classes and check for presence */
             for (var cssFile in document.styleSheets) {
+                if (!document.styleSheets[cssFile].hasOwnProperty('cssRules')) continue;
+                
                 for (var cssRule in document.styleSheets[cssFile].cssRules) {
                     var style = document.styleSheets[cssFile].cssRules[cssRule];
 
