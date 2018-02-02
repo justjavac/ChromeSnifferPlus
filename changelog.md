@@ -1,5 +1,10 @@
 ## Change Logs
 
+### 2.8.6
+
+- fix cssRules
+- change spdy check rule
+
 ### 2.7.0
 
 - upload data where popup
