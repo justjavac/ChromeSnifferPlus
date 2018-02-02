@@ -614,6 +614,11 @@ var appinfo = {
         url: 'http://ionicframework.com/',
         priority: 1.5
     },
+    'Elm': {
+        icon: 'elm.ico',
+        url: 'http://elm-lang.org/',
+        priority: 1.5
+    },
     'D3': {
         icon: 'D3.svg',
         url: 'http://d3js.org/',
