@@ -703,7 +703,7 @@ var appinfo = {
     },
     'Google Loader': {
         icon: 'google.ico',
-        url: 'http://code.google.com/apis/loader',
+        url: 'https://developers.google.com/loader/',
         priority: 2.9
     },
 
