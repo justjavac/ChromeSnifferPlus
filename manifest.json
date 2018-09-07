@@ -4,9 +4,9 @@
 		"48": "icon48.png",
 		"128": "icon128.png"
 	},
-	"short_name": "ChromeSnifferPlus",
+	"short_name": "__MSG_extShortName__",
 	"manifest_version": 2,
-	"version": "2.8.6",
+	"version": "2.8.7",
 	"description": "__MSG_extDesc__",
 	"default_locale": "en",
 	"background": {
@@ -31,6 +31,5 @@
         "https://*/*"
 	],
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
- 	"web_accessible_resources": ["js/detector.js"],
-	"update_url": "https://raw.github.com/justjavac/ChromeSnifferPlus/master/update.xml"
+ 	"web_accessible_resources": ["js/detector.js"]
 }
