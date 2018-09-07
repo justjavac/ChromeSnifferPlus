@@ -1,5 +1,9 @@
 ## Change Logs
 
+### 2.8.7
+
+- change app name
+
 ### 2.8.6
 
 - fix cssRules
