@@ -986,6 +986,11 @@ var appinfo = {
         url: 'https://facebook.github.io/react/',
         priority: 3
     },
+    'AMP': {
+        icon: 'AMP.png',
+        url: 'https://ampproject.org',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
