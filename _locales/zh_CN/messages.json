@@ -41,7 +41,7 @@
 		"message": "如果你发现了新的类库或框架，你可以"
 	},
 	"extIntroductionIssues": {
-		"message": "提出反馈"
+		"message": "创建 issue"
 	},
 	"extIntroductionThanks": {
 		"message": "谢谢"
