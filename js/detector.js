@@ -149,7 +149,8 @@
         'Mura CMS': /mura\/js/,
         'Tiki Wiki CMS Groupware': /tiki-js/,
         'OpenTag': /opentag.*\.js/,
-        'KISSmetrics': /i.kissmetrics.com\/i.js/
+        'KISSmetrics': /i.kissmetrics.com\/i.js/,
+        'AMP': /cdn\.ampproject\.org/
     };
 
     for (var idx in scripts) {
