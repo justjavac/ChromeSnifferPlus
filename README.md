@@ -24,8 +24,6 @@ If you are a developer, you can [Create Issues](https://github.com/justjavac/Chr
 
 view [change log](./changelog.md)
 
-[中文介绍](./README_zh_CN.md)
-
 ### Install
 
 - [Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh)

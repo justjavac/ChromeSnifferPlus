@@ -1,5 +1,9 @@
 ## Change Logs
 
+### 2.8.8
+
+- remove README zh-CN
+
 ### 2.8.7
 
 - change app name
