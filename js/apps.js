@@ -991,6 +991,11 @@ var appinfo = {
         url: 'https://ampproject.org',
         priority: 3
     },
+    'Ember': {
+        icon: 'ember.png',
+        url: 'https://emberjs.com/',
+        priority: 3
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',

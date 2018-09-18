@@ -445,6 +445,9 @@
         },
         'Webpack':function () {
             return window.webpackJsonp;
+        },
+        'Ember':function () {
+            return window.EmberENV && window.Ember;
         }
     };
 
@@ -560,6 +563,9 @@
         },
         'Lo-dash':function () {
             if(window._ && window._.name === 'lodash') return window._.VERSION;
+        },
+        'Ember':function () {
+            if (window.Ember) return window.Ember.VERSION;
         }
     };
 
