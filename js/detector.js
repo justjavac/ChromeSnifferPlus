@@ -448,6 +448,21 @@
         },
         'Ember':function () {
             return window.EmberENV && window.Ember;
+        },
+        'flowchart': function () {
+            return window.flowchart;
+        },
+        'katex': function () {
+            return window.katex;
+        },
+        'editor.md': function () {
+            return window.editormd;
+        },
+        'highlight.js': function () {
+            return window.hljs;
+        },
+        'sequence-diagrams': function () {
+            return window.Diagram && window.Diagram.name === 'Diagram';
         }
     };
 

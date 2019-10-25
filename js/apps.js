@@ -996,6 +996,26 @@ var appinfo = {
         url: 'https://emberjs.com/',
         priority: 3
     },
+    'flowchart': {
+        icon: 'flowchart.png',
+        url: 'https://github.com/adrai/flowchart.js'
+    },
+    'katex': {
+        icon: 'katex.png',
+        url: 'https://github.com/adrai/flowchart.js'
+    },
+    'editor.md': {
+        icon: 'editormd.png',
+        url: 'https://pandao.github.io/editor.md/'
+    },
+    'highlight.js': {
+        icon: 'hljs.png',
+        url: 'https://github.com/highlightjs/highlight.js'
+    },
+    'sequence-diagrams': {
+        icon: 'sequence-diagrams.png',
+        url: 'https://bramp.github.io/js-sequence-diagrams/'
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
