@@ -481,6 +481,9 @@
         },
         'Raven': function () {
             return window.Raven;
+        },
+        'qrcode.js': function () {
+            return window.QRCode && window.QRCode.name === 'QRCode';
         }
     };
 
