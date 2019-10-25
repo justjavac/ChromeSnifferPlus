@@ -1044,6 +1044,10 @@ var appinfo = {
         icon: 'qrcode.png',
         url: 'https://github.com/jeromeetienne/jquery-qrcode'
     },
+    'AliyunOSS': {
+        icon: 'aliyun.png',
+        url: 'https://www.alibabacloud.com/product/oss',
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
