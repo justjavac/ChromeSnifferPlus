@@ -32,6 +32,7 @@ var knownHeaders = {
         'nginx': /nginx\/?(.*)/,
         'IIS': /Microsoft-IIS\/?(.*)/,
         'AliyunOSS': /AliyunOSS\/?(.*)/,
+        'cloudflare': /cloudflare\/?(.*)/,
     },
     'via': {
         'Varnish': /(.*) varnish/
