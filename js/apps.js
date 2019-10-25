@@ -1028,6 +1028,18 @@ var appinfo = {
         icon: 'websockets.png',
         url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebSocket'
     },
+    'Prism': {
+        icon: 'Prism.svg',
+        url: 'https://prismjs.com/'
+    },
+    'Mousetrap': {
+        icon: 'mousetrap.png',
+        url: 'https://craig.is/killing/mice'
+    },
+    'Raven': {
+        icon: 'sentry.io',
+        url: 'https://docs.sentry.io/platforms/javascript/'
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',

@@ -472,6 +472,15 @@
         },
         'WebSocket': function () {
             return window.WebSocket && window.WebSocket.CONNECTING;
+        },
+        'Prism': function () {
+            return window.Prism;
+        },
+        'Mousetrap': function () {
+            return window.Mousetrap;
+        },
+        'Raven': function () {
+            return window.Raven;
         }
     };
 
@@ -602,6 +611,9 @@
         },
         'WebSocket': function () {
             if (window.WebSocket && window.WebSocket.CONNECTING) return window.WebSocket.CONNECTING + '[' + window.WebSocket.OPEN + ', ' + window.WebSocket.CLOSED + ']';
+        },
+        'Raven': function () {
+            if (window.Raven) return window.Raven.VERSION;
         }
     };
 
