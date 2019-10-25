@@ -1016,6 +1016,18 @@ var appinfo = {
         icon: 'sequence-diagrams.png',
         url: 'https://bramp.github.io/js-sequence-diagrams/'
     },
+    'ace': {
+        icon: 'ace.png',
+        url: 'https://github.com/ajaxorg/ace'
+    },
+    'WebFont': {
+        icon: 'google_fonts_lodp.ico',
+        url: 'https://github.com/typekit/webfontloader'
+    },
+    'WebSocket': {
+        icon: 'websockets.png',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebSocket'
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
