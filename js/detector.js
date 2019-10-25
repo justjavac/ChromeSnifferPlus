@@ -581,6 +581,12 @@
         },
         'Ember':function () {
             if (window.Ember) return window.Ember.VERSION;
+        },
+        'katex': function () {
+            if (window.katex) return window.katex.version;
+        },
+        'editor.md': function () {
+            if (window.editormd) return window.editormd.version;
         }
     };
 
