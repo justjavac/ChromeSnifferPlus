@@ -1048,6 +1048,9 @@ var appinfo = {
         icon: 'aliyun.png',
         url: 'https://www.alibabacloud.com/product/oss',
     },
+    'emoji': {
+        icon: 'emoji.png',
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',
