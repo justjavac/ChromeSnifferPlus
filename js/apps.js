@@ -996,6 +996,65 @@ var appinfo = {
         url: 'https://emberjs.com/',
         priority: 3
     },
+    'flowchart': {
+        icon: 'flowchart.png',
+        url: 'https://github.com/adrai/flowchart.js'
+    },
+    'katex': {
+        icon: 'katex.png',
+        url: 'https://github.com/adrai/flowchart.js'
+    },
+    'editor.md': {
+        icon: 'editormd.png',
+        url: 'https://pandao.github.io/editor.md/'
+    },
+    'highlight.js': {
+        icon: 'hljs.png',
+        url: 'https://github.com/highlightjs/highlight.js'
+    },
+    'sequence-diagrams': {
+        icon: 'sequence-diagrams.png',
+        url: 'https://bramp.github.io/js-sequence-diagrams/'
+    },
+    'ace': {
+        icon: 'ace.png',
+        url: 'https://github.com/ajaxorg/ace'
+    },
+    'WebFont': {
+        icon: 'google_fonts_lodp.ico',
+        url: 'https://github.com/typekit/webfontloader'
+    },
+    'WebSocket': {
+        icon: 'websockets.png',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebSocket'
+    },
+    'Prism': {
+        icon: 'Prism.svg',
+        url: 'https://prismjs.com/'
+    },
+    'Mousetrap': {
+        icon: 'mousetrap.png',
+        url: 'https://craig.is/killing/mice'
+    },
+    'Raven': {
+        icon: 'sentry.io',
+        url: 'https://docs.sentry.io/platforms/javascript/'
+    },
+    'qrcode.js': {
+        icon: 'qrcode.png',
+        url: 'https://github.com/jeromeetienne/jquery-qrcode'
+    },
+    'AliyunOSS': {
+        icon: 'aliyun.png',
+        url: 'https://www.alibabacloud.com/product/oss',
+    },
+    'emoji': {
+        icon: 'emoji.png',
+    },
+    'cloudflare': {
+        icon: 'cloudflare.ico',
+        url: 'https://www.cloudflare.com/',
+    },
     // ==== misc ====
     '': { // default
         icon: 'unknown.jpg',

@@ -432,7 +432,25 @@
             return window.Rx;
         },
         'Vue': function() {
-            return window.Vue;
+            if (window.Vue) {
+                return window.Vue;
+            }
+            const all = document.querySelectorAll('*');
+            let el;
+            for (let i = 0; i < all.length; i++) {
+                if (all[i].__vue__) {
+                    el = all[i];
+                    break;
+                }
+            }
+            if (el) {
+                let Vue = Object.getPrototypeOf(el.__vue__).constructor;
+                while (Vue.super) {
+                    Vue = Vue.super;
+                }
+                window.Vue = Vue;
+                return Vue;
+            }
         },
         'polymer':function () {
             return window.Polymer;
@@ -448,6 +466,45 @@
         },
         'Ember':function () {
             return window.EmberENV && window.Ember;
+        },
+        'flowchart': function () {
+            return window.flowchart;
+        },
+        'katex': function () {
+            return window.katex;
+        },
+        'editor.md': function () {
+            return window.editormd;
+        },
+        'highlight.js': function () {
+            return window.hljs;
+        },
+        'sequence-diagrams': function () {
+            return window.Diagram && window.Diagram.name === 'Diagram';
+        },
+        'ace': function () {
+            return window.ace && typeof (window.ace.UndoManager) === 'function';
+        },
+        'WebFont': function () {
+            return window.WebFont;
+        },
+        'WebSocket': function () {
+            return window.WebSocket && window.WebSocket.CONNECTING;
+        },
+        'Prism': function () {
+            return window.Prism;
+        },
+        'Mousetrap': function () {
+            return window.Mousetrap;
+        },
+        'Raven': function () {
+            return window.Raven;
+        },
+        'qrcode.js': function () {
+            return window.QRCode && window.QRCode.name === 'QRCode';
+        },
+        'emoji': function () {
+            return window.String.prototype.emoji;
         }
     };
 
@@ -566,6 +623,21 @@
         },
         'Ember':function () {
             if (window.Ember) return window.Ember.VERSION;
+        },
+        'katex': function () {
+            if (window.katex) return window.katex.version;
+        },
+        'editor.md': function () {
+            if (window.editormd) return window.editormd.version;
+        },
+        'ace': function () {
+            if (window.ace && typeof (window.ace.UndoManager) === 'function') return window.ace.version;
+        },
+        'WebSocket': function () {
+            if (window.WebSocket && window.WebSocket.CONNECTING) return window.WebSocket.CONNECTING + '[' + window.WebSocket.OPEN + ', ' + window.WebSocket.CLOSED + ']';
+        },
+        'Raven': function () {
+            if (window.Raven) return window.Raven.VERSION;
         }
     };
 
