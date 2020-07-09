@@ -2,7 +2,6 @@ ChromeSnifferPlus
 =================
 
 [![](https://img.shields.io/github/issues/justjavac/ChromeSnifferPlus.svg)](https://github.com/justjavac/ChromeSnifferPlus/issues) [![](https://img.shields.io/github/release/justjavac/ChromeSnifferPlus.svg)](https://github.com/justjavac/ChromeSnifferPlus/releases)
-[![Github All Releases](https://img.shields.io/github/downloads/justjavac/ChromeSnifferPlus/total.svg)]()
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh.svg)](https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh)
 
 ### Introduction
