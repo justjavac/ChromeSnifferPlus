@@ -26,6 +26,7 @@ view [change log](./changelog.md)
 ### Install
 
 - [Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh)
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/idjbhfcodofelbdbhaekgcecaphcgohh)
 
 ### Screenshot
 
