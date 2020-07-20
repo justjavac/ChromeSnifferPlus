@@ -1,32 +1,39 @@
-## Change Logs
+# Change Logs
 
-### 2.8.8
+## 2.9.0 - [2020-07-20]
+
+- Angular fix, french language added ([#120](https://github.com/justjavac/ChromeSnifferPlus/pull/120))
+- add Microsoft Edge ([#119](https://github.com/justjavac/ChromeSnifferPlus/pull/119))
+- add some detector and fix Vue ([#115](https://github.com/justjavac/ChromeSnifferPlus/pull/115))
+- remove github name ([#114](https://github.com/justjavac/ChromeSnifferPlus/pull/114))
+
+## 2.8.8
 
 - remove README zh-CN
 
-### 2.8.7
+## 2.8.7
 
 - change app name
 
-### 2.8.6
+## 2.8.6
 
 - fix cssRules
 - change spdy check rule
 
-### 2.7.0
+## 2.7.0
 
 - upload data where popup
 - modified frequency
 
-### 2.6.0
+## 2.6.0
 
 - fix bugs
 
-### 2.4.0
+## 2.4.0
 
 - Pusher
 
-### 2.3.0
+## 2.3.0
 
 - ColorThief
 - jQuery.hotkeys
@@ -37,33 +44,33 @@
 - Mithril
 - s9e.TextFormatter
 
-### 2.2.0
+## 2.2.0
 
 - 修改上传频率
 
-### 2.0.0
+## 2.0.0
 
 - popup layout
 
-### 1.6.0
+## 1.6.0
 
 - check IP
 
-### 1.5.0
+## 1.5.0
 
 - 统计提交
 - KindEditor
 
-### 1.4.0
+## 1.4.0
 
 - Flarum
 
-### 1.3.0
+## 1.3.0
 
 - moment
 - 添加葡萄牙语 pt_BR
 
-### 1.2.0
+## 1.2.0
 
 - 修复 Bootstrap 检测 #36
 - 修复百度统计的bug #20
@@ -71,45 +78,45 @@
 - google analytic fixed #13
 - jiathis fixed #21
 
-### 1.1.0 
+## 1.1.0 
 
 - 重新规划目录结构
 - 增加英文版
 
-### 0.3.9
+## 0.3.9
 
 - 性能提升
 
-### 0.3.8
+## 0.3.8
 
 - Highcharts
 - YUI 3
 - Zepto.js
 - 新增 Google Analytics 功能
 
-### 0.3.7
+## 0.3.7
 
 - segmentfault http://segmentfault.com
 
-### 0.3.6
+## 0.3.6
 
 - 自动更新 
 
-### 0.3.5
+## 0.3.5
 
 - Tengine http://tengine.taobao.org
 - Tomcat http://tomcat.apache.org
 - Java http://www.java.com
 
-### 0.3.4
+## 0.3.4
 
 - 新增 `popup.html` 页面
 
-### 0.3.3
+## 0.3.3
 
 - CodeIgniter http://codeigniter.com
 
-### 0.3.2
+## 0.3.2
 
 - Angular http://angularjs.org
 - HumansTxt http://humanstxt.org
@@ -130,7 +137,7 @@
 - ASP.NET http://www.asp.net
 - Nette http://nette.org
 
-### 0.3.1
+## 0.3.1
 
 - 百度统计 http://tongji.baidu.com
 - cnzz http://www.cnzz.com
