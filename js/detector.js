@@ -414,8 +414,8 @@
         },
         'SPDY': function() {
             if (window.PerformanceNavigationTiming) {
-              const ntEntry = performance.getEntriesByType('navigation')[0];
-              return ['h2', 'hq'].includes(ntEntry.nextHopProtocol);
+                const ntEntry = performance.getEntriesByType('navigation')[0];
+                return ['h2', 'hq'].includes(ntEntry.nextHopProtocol);
             }
             return false;
         },
@@ -589,16 +589,16 @@
         },
         'Angular': function() {
             if (window.ng && window.document.body && window.document.body.children.length > 0) {
-                var children = new Array(window.document.body.children[0]);
-                var rootCmp = children.find( function (e) {
-                    return e.attributes && 'ng-version' in e.attributes;
-                });
-                return rootCmp.attributes['ng-version'].nodeValue;
+                const rootCmp = document.querySelectorAll('*[ng-version]')[0];
+
+                if (rootCmp) {
+                    return rootCmp.getAttribute('ng-version');
+                }
             }
         },
         'Ionic': function () {
-          if(window.Ionic && window.Ionic.version) return window.Ionic.version;
-          if(window.ionic && window.ionic.version) return window.ionic.version;
+            if(window.Ionic && window.Ionic.version) return window.Ionic.version;
+            if(window.ionic && window.ionic.version) return window.ionic.version;
         },
         'D3': function() {
             if (window.d3 && window.d3.version) return window.d3.version;

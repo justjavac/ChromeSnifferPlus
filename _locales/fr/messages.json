@@ -1,0 +1,53 @@
+{
+	"extName": {
+		"message": "Library Sniffer",
+		"description": "Nom de l'extension"
+	},
+	"extShortName": {
+		"message": "LibSniffer",
+		"description": "Nom court de l'extension"
+	},
+	"extDesc": {
+		"message": "Détectez les frameworks Web et librairies JavaScript qui s'exécutent sur les sites que vous visitez.",
+		"description": "Description de l'extension"
+	},
+	"extIntroTitle": {
+		"message": "Introduction",
+		"description": "Page des options : titre de l'introduction"
+	},
+	"extIntroduction": {
+		"message": "Library Sniffer : vous pouvez détecter",
+		"description": "Page des options : introduction"
+	},
+	"extIntroductionJavascript": {
+		"message": "Librairies JavaScript : jQuery, ExtJS, Angular, etc."
+	},
+	"extIntroductionWebAPI": {
+		"message": "API Web : Blogger, Google Analytics, etc."
+	},
+	"extIntroductionWebFramework": {
+		"message": "Frameworks Web : WordPress, phpBB, Drupal, MediaWiki, codeigniter, etc."
+	},
+	"extIntroductionWebSever": {
+		"message": "Serveurs Web : PHP, Apache, nginx, IIS, etc."
+	},
+	"extIntroductionSource": {
+		"message": "Code source : "
+	},
+	"extIntroductionNotice": {
+		"message": "Les développeurs aiment toujours cacher quelque chose, il pourrait donc y avoir des erreurs."
+	},
+	"extIntroductionDeveloper": {
+		"message": "Si vous êtes un développeur, vous pouvez "
+	},
+	"extIntroductionIssues": {
+		"message": "créer un ticket"
+	},
+	"extIntroductionThanks": {
+		"message": "merci"
+	},
+	"pageActionTitle": {
+		"message": "Cliquez pour voir les détails ...",
+		"description": "Titre de la page d'action"
+	}
+}
