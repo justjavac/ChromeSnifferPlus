@@ -448,7 +448,6 @@
                 while (Vue.super) {
                     Vue = Vue.super;
                 }
-                window.Vue = Vue;
                 return Vue;
             }
         },
