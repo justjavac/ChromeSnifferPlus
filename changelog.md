@@ -1,5 +1,9 @@
 # Change Logs
 
+## 2.9.1 - [2020-07-22]
+
+- fix Vue detect ([#121](https://github.com/justjavac/ChromeSnifferPlus/pull/121))
+
 ## 2.9.0 - [2020-07-20]
 
 - Angular fix, french language added ([#120](https://github.com/justjavac/ChromeSnifferPlus/pull/120))
