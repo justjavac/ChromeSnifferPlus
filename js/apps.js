@@ -114,6 +114,12 @@ var appinfo = {
     },
 
     // ==== cms or framework ====
+    'silent': {
+        icon: 'silent.png',
+        url: 'https://github.com/fritx/silent',
+        priority: 1
+    },
+
     'CodeIgniter': {
         icon: 'codeigniter.ico',
         url: 'http://codeigniter.com',

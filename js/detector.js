@@ -214,6 +214,11 @@
     // 5: detect by inline javascript
     // 根据 inline javascript 判断
     var js_tests = {
+        'silent': function() {
+            var sidebar = document.querySelector('.sidebar .sidebar-inner #sidebar-page.sidebar-page');
+            var main = document.querySelector('.main .main-inner #main-page.main-page');
+            return main && sidebar;
+        },
         'Highcharts': function() {
             return window.Highcharts;
         },
