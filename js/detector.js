@@ -111,6 +111,7 @@
         '\u65e0\u89c5': /widget\.wumii\.(cn|com)\/ext\/relatedItemsWidget/,
         // 无觅相关文章插件
         'segmentfault': /w\.segmentfault\.com\/card\/\d+\.js/i,
+        'AMEX': /gateway(-[a-z]+)?\.americanexpress\.com\/(checkout|static)\//i,
 
         'Google Analytics': /google-analytics\.com\/(ga|urchin|analytics).js/i,
         'Quantcast': /quantserve\.com\/quant\.js/i,
@@ -200,6 +201,7 @@
         // 七牛云存储加速
         'Shibboleth': /<form action="\/idp\/Authn\/UserPassword" method="post">/,
         'Django': /<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>/,
+        'AMEX': /<(img|input|source|use|svg|span|i|script)[^>]+(amex|american[-_\s]?express|gateway(-[a-z]+)?\.americanexpress\.com)[^>]*>/i,
         'React': /<[^>]+data-react/
     };
 

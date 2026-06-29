@@ -81,6 +81,12 @@ var appinfo = {
         url: 'http://blogger.com',
         priority: 0.9
     },
+    'AMEX': {
+        title: 'American Express',
+        icon: 'amex.png',
+        url: 'https://www.americanexpress.com/',
+        priority: 2.9
+    },
 
     'Webs': {
         icon: 'webs.ico',
