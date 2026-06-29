@@ -728,6 +728,11 @@ var appinfo = {
         url: 'https://www.google.com/analytics/?hl=zh-CN',
         priority: 3
     },
+    'HubSpot': {
+        icon: 'hubspot.ico',
+        url: 'https://www.hubspot.com',
+        priority: 3
+    },
     'SiteCatalyst': {
         icon: 'SiteCatalyst.ico',
         url: 'http://www.omniture.com',

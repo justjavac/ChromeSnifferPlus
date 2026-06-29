@@ -113,6 +113,7 @@
         'segmentfault': /w\.segmentfault\.com\/card\/\d+\.js/i,
 
         'Google Analytics': /google-analytics\.com\/(ga|urchin|analytics).js/i,
+        'HubSpot': /(js\.hs-scripts\.com|js\.hs-analytics\.net|js\.hscollectedforms\.net|js\.hsforms\.net|js\.hs-banner\.com|js\.hsadspixel\.net)\//i,
         'Quantcast': /quantserve\.com\/quant\.js/i,
         'Prototype': /prototype\.js/i,
         'Joomla': /\/components\/com_/,
