@@ -15,7 +15,7 @@
     if (head) {
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = chrome.extension.getURL('js/detector.js');
+        script.src = chrome.runtime.getURL('js/detector.js');
 
         var meta = document.createElement('meta');
         meta.name = 'chromesniffer';
@@ -27,7 +27,7 @@
         function() {
             setTimeout(function(){
                 var apps = JSON.parse(meta.content);
-                chrome.extension.sendMessage({
+                chrome.runtime.sendMessage({
                     msg: "result",
                     apps: apps
                 });

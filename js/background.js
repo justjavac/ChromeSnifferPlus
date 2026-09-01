@@ -1,13 +1,8 @@
 /**
- * Created with JetBrains PhpStorm.
- * User: buihoangvu
- * User: justjavac <justjavac@gmail.com>
- * Date: 10/4/13
- * Time: 3:28 PM
- * To change this template use File | Settings | File Templates.
+ * Background logic running in the Manifest V3 service worker.
  */
 
-window.dd = function(msg) {
+var dd = function(msg) {
     console.log(msg);
 };
 
@@ -78,13 +73,14 @@ chrome.tabs.onRemoved.addListener(function(tabId) {
     delete tabinfo[tabId];
 });
 
-chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     // 'result' event issued by main.js once app identification is complete
     if (request.msg == 'result') {
         var thisTab = tabinfo[sender.tab.id];
-        
-        if ( ! thisTab) {
-            return;
+
+        if (!thisTab) {
+            sendResponse({});
+            return true;
         }
 
         thisTab['apps'] = request.apps;
@@ -110,39 +106,23 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         if (count > 0) {
             var mainAppInfo = appinfo[mainApp];
             if (mainAppInfo) { // lazy bug
-                var appTitle = mainAppInfo.title ? mainAppInfo.title: mainApp;
+                var appTitle = mainAppInfo.title ? mainAppInfo.title : mainApp;
 
                 if (request.apps[mainApp] != "-1") {
                     appTitle = mainApp + ' ' + request.apps[mainApp];
                 }
 
-                chrome.pageAction.setIcon({
+                chrome.action.setIcon({
                     tabId: sender.tab.id,
                     path: 'apps/' + mainAppInfo.icon
                 });
-                chrome.pageAction.setTitle({
+                chrome.action.setTitle({
                     tabId: sender.tab.id,
                     title: appTitle
                 });
             }
 
-            if ( ! /^(http|https):\/\/(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])/.test(sender.tab.url)
-                    && ! /^(http|https):\/\/localhost/.test(sender.tab.url)) {
-                data = {
-                    "libs": JSON.stringify(thisTab['apps']), 
-                    "ip": thisTab['ip'], 
-                    "add_time": +new Date
-                };
-                localStorage.setItem(sender.tab.url, JSON.stringify(data));
-
-                if (localStorage.length > 100) {
-                    window.CollecUsage(function(){
-                        localStorage.clear();
-                    });
-                }
-            }
-
-            chrome.pageAction.show(sender.tab.id);
+            chrome.action.show(sender.tab.id);
         }
         sendResponse({});
     } else if (request.msg == 'get') {
@@ -150,16 +130,6 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         var apps = tabinfo[request.tab];
         sendResponse(apps);
     }
-});
 
-chrome.runtime.onStartup.addListener(function(){
-    window.CollecUsage(function(){
-        localStorage.clear();
-    });
-});
-
-chrome.runtime.onSuspend.addListener(function(){
-    window.CollecUsage(function(){
-        localStorage.clear();
-    });
+    return true;
 });

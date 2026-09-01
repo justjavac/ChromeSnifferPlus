@@ -1,24 +1,21 @@
-var bg = chrome.extension.getBackgroundPage();
-
 // window.CollecUsage(function(){
 //     localStorage.clear();
 // });
 
-chrome.tabs.getSelected(null,
-function(tab) {
-    chrome.extension.sendMessage({
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    var tab = tabs[0];
+
+    chrome.runtime.sendMessage({
         msg: "get",
         tab: tab.id
     },
     function(response) {
         var display = document.getElementById('app_list');
 
-        var apps = response && response.apps ? response.apps: {};
-
-        var appinfo = bg.appinfo;
+        var apps = response && response.apps ? response.apps : {};
 
         for (var appid in apps) {
-            app = appinfo[appid] ? appinfo[appid] : {};
+            var app = appinfo[appid] ? appinfo[appid] : {};
 
             if (!app.title) app.title = appid;
             if (!app.url) app.url = appinfo[''].url.replace('%s', appid); // it's google one

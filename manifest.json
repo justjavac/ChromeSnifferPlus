@@ -5,30 +5,37 @@
 		"128": "icon128.png"
 	},
 	"short_name": "__MSG_extShortName__",
-	"manifest_version": 2,
-	"version": "2.9.1",
+	"manifest_version": 3,
+	"version": "3.0.0",
 	"description": "__MSG_extDesc__",
 	"default_locale": "en",
 	"background": {
-		"page": "background.html"
+		"service_worker": "js/service-worker.js"
 	},
 	"options_page": "option.html",
-	"page_action": {
+	"action": {
 		"default_icon": "icon.png",
 		"default_title": "__MSG_pageActionTitle__",
 		"default_popup": "popup.html"
 	},
 	"content_scripts": [
 		{
-			"matches": ["http://*/*","https://*/*"],
+			"matches": ["http://*/*", "https://*/*"],
 			"js": ["js/main.js"]
 		}
 	],
 	"permissions": [
 		"tabs",
-		"webRequest",
-        "http://*/*",
-        "https://*/*"
+		"webRequest"
 	],
- 	"web_accessible_resources": ["js/detector.js"]
+	"host_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["js/detector.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
 }
